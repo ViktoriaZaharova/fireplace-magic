@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Muller";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Muller/MullerLight.eot");
+  src: url("../fonts/Muller/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerLight.woff") format("woff"), url("../fonts/Muller/MullerLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muller";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Muller/MullerRegular.eot");
+  src: url("../fonts/Muller/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerRegular.woff") format("woff"), url("../fonts/Muller/MullerRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muller";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Muller/MullerMedium.eot");
+  src: url("../fonts/Muller/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerMedium.woff") format("woff"), url("../fonts/Muller/MullerMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BerlingskeSerif";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-Md.eot");
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-Md.eot?#iefix") format("embedded-opentype"), url("../fonts/BerlingskeSerif/BerlingskeSerif-Md.woff") format("woff"), url("../fonts/BerlingskeSerif/BerlingskeSerif-Md.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BerlingskeSerif";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-MdItalic.eot");
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-MdItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BerlingskeSerif/BerlingskeSerif-MdItalic.woff") format("woff"), url("../fonts/BerlingskeSerif/BerlingskeSerif-MdItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BerlingskeSerif";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-Bold.eot");
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BerlingskeSerif/BerlingskeSerif-Bold.woff") format("woff"), url("../fonts/BerlingskeSerif/BerlingskeSerif-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BerlingskeSerif";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-BoldItalic.eot");
+  src: url("../fonts/BerlingskeSerif/BerlingskeSerif-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BerlingskeSerif/BerlingskeSerif-BoldItalic.woff") format("woff"), url("../fonts/BerlingskeSerif/BerlingskeSerif-BoldItalic.ttf") format("truetype");
+}
+header {
+  position: absolute;
+  background: #fff;
+  -webkit-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+header.fixed {
+  position: fixed;
+}
+header.fixed .header-bottom {
+  display: none;
+}
+header .logo {
+  margin: 0 auto 0 0;
+}
+header .btn {
+  margin: 0 0 0 26px;
+}
+
+.header-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-bottom {
+  width: 100%;
+  border-top: 1px solid #f5f4f0;
+}
+
+.nav-menu {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.menu li a {
+  color: #000;
+  padding: 25.5px 0;
+}
+.menu li a:hover {
+  color: #f18231;
+}
+
+.header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  margin: 0 0 0 42px;
+}
+.header-box__icon {
+  margin: 0 9px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+}
+
+a.header-box:hover {
+  color: #f18231;
+}
+
+.btn-burger {
+  width: 20px;
+  height: 16px;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.btn-burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
