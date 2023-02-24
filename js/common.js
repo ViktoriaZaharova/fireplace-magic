@@ -25,26 +25,7 @@ $(document).ready(function () {
 });
 // scroll animate anchor end
 
-// scroll brands
-$(document).ready(function () {
-	var element = document.getElementById("scroll-section");
-	var cnt = 0;
 
-	document.addEventListener('wheel', function (event) {
-		event = event || window.event;
-		var y = event.deltaY || event.detail || event.wheelDelta, val = 0.3, min = 0, max = 0;
-
-		if (y > 0) {
-			cnt = cnt + 1;
-			element.style.transform = 'translate(' + cnt + '%)';
-		}
-		if (y < 0) {
-			cnt = cnt - 1;
-			element.style.transform = 'translate(' + cnt + '%)';
-		}
-	});
-});
-// scroll brands end
 
 
 $(document).ready(function () {
@@ -103,6 +84,41 @@ $('.work-slider2').slick({
 	prevArrow: '<button type="button" class="slick-prev"></button>',
 	nextArrow: '<button type="button" class="slick-next"></button>'
 });
+// slick active
+$(window).on('load resize', function () {
+	if ($(window).width() < 576) {
+		$('.clients-logos:not(.slick-initialized)').slick({
+			// dots: true,
+			infinite: true,
+			// speed: 100,
+			slidesToShow: 3,
+			arrows: false
+		});
+	} else {
+		$(".clients-logos.slick-initialized").slick("unslick");
+		// scroll brands
+		$(document).ready(function () {
+			var element = document.getElementById("scroll-section");
+			var cnt = 0;
+
+			document.addEventListener('wheel', function (event) {
+				event = event || window.event;
+				var y = event.deltaY || event.detail || event.wheelDelta, val = 0.3, min = 0, max = 0;
+
+				if (y > 0) {
+					cnt = cnt + 1;
+					element.style.transform = 'translate(' + cnt + '%)';
+				}
+				if (y < 0) {
+					cnt = cnt - 1;
+					element.style.transform = 'translate(' + cnt + '%)';
+				}
+			});
+		});
+// scroll brands end
+	}
+});
+// slick active
 // sliders end
 
 $(document).ready(function () {
@@ -125,4 +141,12 @@ $('.btn-burger').click(function () {
 
 $('.mobile-menu__close').click(function () {
 	$('.header-bottom').fadeOut();
+});
+
+$(function () {
+	var $el = $('.parallax-window');
+	$(window).on('scroll', function () {
+		var scroll = $(document).scrollTop();
+		$el.css({ 'background-position': '50% ' + (-.1 * scroll) + 'px' });
+	});
 });
