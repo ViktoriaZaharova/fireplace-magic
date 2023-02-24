@@ -86,15 +86,15 @@ $('.work-slider2').slick({
 });
 // slick active
 $(window).on('load resize', function () {
-	if ($(window).width() < 992) { 
-		$(function () {
-			var $el = $('.parallax-window');
-			$(window).on('scroll', function () {
-				var scroll = $(document).scrollTop();
-				$el.css({ 'background-position': '50% ' + (-.1 * scroll) + 'px' });
-			});
-		});
-	}
+	// if ($(window).width() < 992) { 
+	// 	$(function () {
+	// 		var $el = $('.parallax-window');
+	// 		$(window).on('scroll', function () {
+	// 			var scroll = $(document).scrollTop();
+	// 			$el.css({ 'background-position': '50% ' + (-.1 * scroll) + 'px' });
+	// 		});
+	// 	});
+	// } 
 	if ($(window).width() < 768) {
 		$('.clients-logos:not(.slick-initialized)').slick({
 			infinite: true,

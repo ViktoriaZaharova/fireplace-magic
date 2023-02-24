@@ -70,10 +70,6 @@
 			max-width: 450px
 
 @media only screen and (max-width: 992px)
-	.home
-		&-bg
-			height: calc(100% + 250px)
-
 	.header-bottom
 		display: none
 		position: fixed
@@ -314,24 +310,7 @@
 	.link
 		margin: 0 0 30px	
 
-	
-
-	.licenses-bg, .warranty-bg, .home-bg
-		top: 50%
-		left: 50%
-		background-attachment: none		
-		transform: translate3d(0, 0, 0) translate(-50%, -50%)	
-
-	.licenses-bg
-		height: calc(100% + 1200px)	
-		top: 0
-		transform: translate3d(0, 0, 0) translate(-50%, 0)	
-
-	.warranty
-		&-bg
-			height: calc(100% + 900px)	
-			top: 0
-			transform: translate3d(0, 0, 0) translate(-50%, 0)														
+														
 
 @media only screen and (max-width: 890px)
 	.warranty
@@ -454,6 +433,21 @@
 			display: flex
 			align-items: center
 
+
+	.licenses-bg, .warranty-bg, .home-bg
+		display: none
+
+	.home
+		background: url('../img/home-bg.jpg') no-repeat center
+		background-size: cover
+
+	.licenses
+		background: url('../img/bg5.jpg') no-repeat center
+		background-size: cover
+
+	.warranty
+		background: url('../img/bg4.jpg') no-repeat center
+		background-size: cover
 
 @media only screen and (max-width: 730px)
 	.you-clients
