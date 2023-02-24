@@ -35,11 +35,11 @@ $(document).ready(function () {
 		var y = event.deltaY || event.detail || event.wheelDelta, val = 0.3, min = 0, max = 0;
 
 		if (y > 0) {
-			cnt = cnt - 1;
+			cnt = cnt + 1;
 			element.style.transform = 'translate(' + cnt + '%)';
 		}
 		if (y < 0) {
-			cnt = cnt + 1;
+			cnt = cnt - 1;
 			element.style.transform = 'translate(' + cnt + '%)';
 		}
 	});

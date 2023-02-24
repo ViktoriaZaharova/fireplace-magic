@@ -57,6 +57,9 @@
   .wrapper {
     padding: 125px 0 0;
   }
+  .about .btn-video {
+    margin: 0 0 -30px;
+  }
   .about-box {
     font-size: 16px;
     margin: 20px 0 0;
@@ -409,10 +412,7 @@
     font-size: 22px;
   }
   .about {
-    padding: 160px 0 50px;
-  }
-  .about .btn-video {
-    margin: 40px 0 0 auto;
+    padding: 160px 0 150px;
   }
   .about-box span {
     max-width: none;
@@ -565,10 +565,7 @@
     font-size: 18px;
   }
   .about {
-    padding: 100px 0 60px;
-  }
-  .about .btn-video {
-    margin: 20px 0 0 0;
+    padding: 100px 0 160px;
   }
   .btn-video {
     font-size: 13px;

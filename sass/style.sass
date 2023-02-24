@@ -47,7 +47,7 @@ body
 	color: #000
 
 html, body
-	overflow-x: hidden 	
+	overflow-x: hidden
 
 img
 	display: block
@@ -158,7 +158,7 @@ button, .btn
 	align-items: center
 
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
-	border-radius: 6px			
+	border-radius: 6px
 
 .svg-icon
 	display: inline-block
@@ -226,7 +226,7 @@ h2
 
 .subtitle
 	font-size: 26px
-	line-height: 1.27	
+	line-height: 1.27
 
 .btn-video
 	display: flex
@@ -327,15 +327,11 @@ h2
 .list-checked
 	li
 		margin: 0 0 30px
-		// padding: 0 0 0 57px
 		position: relative
 		display: flex
 		align-items: start
 		&::before
 			content: ''
-			// position: absolute
-			// left: 0
-			// top: 0
 			width: 41px
 			min-width: 41px
 			height: 41px
@@ -382,11 +378,17 @@ h2
 	bottom: 50px
 	background: url('../img/down.svg') no-repeat center
 	background-size: contain
+	&:hover
+		background: url('../img/down-accent.svg') no-repeat center
+		background-size: contain
 
 .slick-prev
 	top: 50px
 	background: url('../img/up.svg') no-repeat center
 	background-size: contain
+	&:hover
+		background: url('../img/up-accent.svg') no-repeat center
+		background-size: contain
 
 .list-social
 	display: flex
@@ -403,7 +405,7 @@ h2
 			width: 44px
 			height: 44px
 			min-width: 44px
-			@include d-flex	
+			@include d-flex
 			&:hover
 				background: $accent
 

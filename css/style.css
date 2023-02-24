@@ -623,10 +623,18 @@ h2 span {
   background: url("../img/down.svg") no-repeat center;
   background-size: contain;
 }
+.slick-next:hover {
+  background: url("../img/down-accent.svg") no-repeat center;
+  background-size: contain;
+}
 
 .slick-prev {
   top: 50px;
   background: url("../img/up.svg") no-repeat center;
+  background-size: contain;
+}
+.slick-prev:hover {
+  background: url("../img/up-accent.svg") no-repeat center;
   background-size: contain;
 }
 

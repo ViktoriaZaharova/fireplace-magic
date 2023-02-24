@@ -129,16 +129,23 @@
 }
 
 .about {
-  padding: 390px 0 114px;
+  padding: 390px 0 294px;
   background: url("../img/bg2.jpg") no-repeat center;
   background-size: cover;
 }
 .about .btn-video {
-  color: #fff;
-  margin: 86px 0 0 auto;
+  color: #000;
+  margin: 0 0 -40px -90px;
+  white-space: nowrap;
+}
+.about .btn-video__icon span {
+  background: #000;
 }
 .about .btn-video:hover {
   color: #f18231;
+}
+.about .btn-video:hover .btn-video__icon span {
+  background: #f18231;
 }
 
 .about-box {
@@ -726,6 +733,11 @@
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgb(250, 250, 250)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(250, 250, 250) 100%);
+}
+.work-slider .slick-prev.active {
+  position: fixed;
+  top: 70px;
+  left: 66.5%;
 }
 
 .work-item-video .work-item__hover::before {
