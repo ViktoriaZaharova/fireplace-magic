@@ -1,16 +1,792 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1265px)
+	.you-clients-wrapper
+		max-width: 780px
+		margin: 0 auto
+		&::before
+			width: 980px
+
+	.you-clients-image
+		max-width: 500px
+		height: 400px
+
+	.you-clients-box
+		font-size: 18px
+
+	.you-clients-box1
+		left: -109px
+
+	.you-clients-box2
+		left: -130px
+		top: 175px
+
+	.you-clients-box3
+		bottom: 35px
+		left: -115px
+
+	.you-clients-box4
+		right: -105px
+
+	.you-clients-box5
+		top: 175px
+		right: -130px
+
+	.you-clients-box6
+		bottom: 35px
+		right: -115px
+
+	.fullscreen-bg__video
+		width: 194px
+		height: 180px
+		margin: 0 0 54px
+
 @media only screen and (max-width: 1200px)
+	.header-box
+		margin: 0 0 0 20px
+		font-size: 15px
+
+	.logo
+		max-width: 120px
+
+	.menu
+		font-size: 12px
+
+	.wrapper
+		padding: 125px 0 0
+
+	.about-box
+		font-size: 16px
+		margin: 20px 0 0
+		p
+			font-size: 40px
+
+	.download-portfolio
+		&__img
+			max-width: 450px
 
 @media only screen and (max-width: 992px)
+	.header-bottom
+		display: none
+		position: fixed
+		z-index: 6
+		width: 100%
+		max-width: 290px
+		height: 100%
+		overflow-y: auto
+		padding: 30px
+		background: #fff
+		left: 0
+		top: 0
+		.header-box
+			display: flex
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+
+	.menu
+		font-size: 15px
+		margin: 0 0 20px
+		li
+			width: 100%
+			a
+				padding: 10px 0
+
+	.mobile-menu__close
+		display: flex
+
+	.btn-burger
+		display: flex
+		flex-direction: column
+
+	.header-top
+		.schedule-box
+			display: none
+
+	.wrapper
+		padding: 61px 0 0
+
+	h1
+		font-size: 56px
+
+	h2
+		font-size: 44px
+
+	.btn-sm
+		padding: 10px 15px
+
+	.btn-md, .licenses .btn
+		font-size: 14px
+		padding: 15px 20px
+
+	form
+		[type="submit"]
+			height: 50px
+
+	header
+		.btn
+			margin: 0 0 0 10px
+
+	.clients-wrapper
+		margin: 70px 0 0
+
+	.clients-logos
+		img
+			margin: 0 20px
+			max-height: 30px
+
+	.you-clients-wrapper
+		max-width: 700px
+		&::before
+			max-width: 700px
+			height: 800px
+
+	.you-clients-image
+		max-width: 350px
+		height: 275px
+
+	.you-clients-box
+		font-size: 15px
+		max-width: 180px
+
+	.you-clients-box1
+		left: -3px
+		top: 15px
+
+	.you-clients-box2
+		left: -34px
+		top: 105px
+
+	.you-clients-box3
+		bottom: 10px
+		left: -17px
+
+	.you-clients-box4
+		right: -3px
+		top: 15px
+
+	.you-clients-box5
+		right: -34px
+		top: 105px
+
+	.you-clients-box6
+		bottom: 10px
+		right: -17px
+
+	.you-clients
+		padding: 70px 0
+
+	.fullscreen-bg__video
+		margin: 0 0 40px
+		width: 130px
+		height: 120px
+
+	.download-portfolio
+		display: flex
+		flex-wrap: wrap
+		&__img
+			max-width: 550px
+			position: relative
+			order: 1
+			margin: 20px auto 0
+			left: 0
+			bottom: 0
+
+		&__content
+			max-width: none
+			width: 100%
+		.subtitle
+			font-size: 16px
+			margin: 20px auto
+			text-align: center
+		.h3
+			text-align: center
+
+	.form-download
+		justify-content: center
+		.consent
+			max-width: 475px
+			margin: 0 auto
+
+	.work
+		padding: 50px 0 0
+		.subtitle
+			max-width: none
+			text-align: center
+			margin: 20px auto
+		.btn-group
+			margin: 0 auto
+			width: 100%
+			justify-content: center
+			.btn
+				width: fit-content
+				flex: none
+		h2
+			text-align: center
+
+	.work-content
+		width: 100%
+
+	.quote
+		max-width: none
+		.box-text
+			max-width: none
+
+	.advantages
+		padding: 60px 0
+		.btn
+			margin: 30px auto 0
+
+	.quote-title
+		margin: 0 0 25px
+
+	.advantages-box
+		margin: 30px 0 0	
+
+	.projects
+		.btn
+			margin: 0 auto
+
+	.licensies-image
+		max-width: 300px
+
+	.licenses .warranty-document
+		margin: 20px auto 20px		
+
+	.question 
+		padding: 60px 0
+		h2
+			margin: 0 0 30px
+		.callback-box	
+			max-width: none
+
+	.question-box
+		margin: 0 0 30px
+
+	.team 
+		padding: 60px 0
+		.subtitle
+			margin: 30px auto
+			text-align: center
+			max-width: none
+		h2
+			text-align: center
+
+	.team-box.js-tab-trigger
+		width: 50%	
+		
+	.sales
+		padding: 30px 0
+		.form-download
+			max-width: none
+			width: 100%
+		.list-social
+			margin: 20px auto 0	
+
+	.sales-title
+		max-width: none
+		width: 100%
+		margin: 0 auto 20px
+		text-align: center	
+		
+	.footer-box
+		margin: 0 0 30px
+		&__title
+			margin: 0 0 20px
+			font-size: 16px
+
+	.footer-menu 
+		li
+			margin: 0 0 10px
+
+	.description-company
+		max-width: none
+		margin: 20px 0
+
+	.link
+		margin: 0 0 30px										
+
+@media only screen and (max-width: 890px)
+	.warranty
+		.callback-box
+			margin: 20px auto 0
+
+	.warranty-document
+		margin: 20px auto 0
+		&__text
+			max-width: none
+
+	.warranty-box
+		margin: 0 auto
+		width: 100%
+		max-width: none
+		&__body
+			max-width: none
+
+	.list-checked
+		li
+			align-items: start
+			margin: 0 0 15px
+			&::before
+				margin: 5px 10px 0 0
+
+	.licenses .warranty-box__body
+		max-width: none
+
+	.licensies-image
+		margin: 20px auto 0
+
+	.licenses
+		padding: 60px 0		
 
 @media only screen and (max-width: 768px)
+	.header-top
+		.header-box__text
+			display: none
+		.header-box__icon
+			margin: 0
+
+	header
+		.btn
+			margin: 0 0 0 20px
+
+	h1
+		font-size: 40px
+
+	.h3
+		font-size: 30px
+
+	.home-content
+		padding: 40px
+		.box-text
+			margin: 20px 0
+			font-size: 22px
+
+	.about
+		padding: 160px 0 50px
+		.btn-video
+			margin: 40px 0 0 auto
+
+	.about-box
+		span
+			max-width: none
+
+	.btn-video
+		&__icon
+			width: 140px
+			height: 140px
+			min-width: 140px
+			margin: 0 0 0 -20px
+			&::after
+				width: 70px
+				height: 70px
+			span
+				width: 20px
+				height: 30px
+
+	.category
+		padding: 60px 0
+		.subtitle
+			margin: 0 auto 30px
+		h2
+			margin: 0 auto 30px
+
+	.nav-tabs
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		max-width: none
+		.nav-link
+			max-width: calc(33.33% - 10px)
+
+	.download-portfolio
+		.subtitle
+			margin: 20px auto
+
+	.quote 
+		padding: 30px
+		.box-text		
+			font-size: 16px
+
+	.advantages 
+		h2		
+			margin: 0 auto 30px
+
+	.team-box
+		&__photo
+			width: 120px
+			height: 150px
+			min-width: 120px
+			margin: 0 20px 0 0
+			&::before
+				width: 120px
+				height: 120px	
+
+	
+
+
+
+@media only screen and (max-width: 730px)
+	.you-clients
+		padding: 50px 0
+		h2
+			margin: 0 auto 30px
+
+	.you-clients-wrapper
+		max-width: none
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		&::before
+			display: none
+
+	.you-clients-image
+		order: 1
+
+	.you-clients-box
+		position: relative
+		max-width: 50%
+		width: 100%
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		text-align: left
+		padding: 0
+		margin: 0 0 10px
+		display: flex
+		align-items: center
+		&::before
+			right: auto
+			left: 0
+			transform: none
+			position: relative
+			margin: 0 10px 0 0
+			min-width: 41px
+
+	.about-box p
+		font-size: 30px
+		margin: 0 10px 0 0
+
+	.form-download
+		label
+			width: 100%
+			margin: 0 auto 16px
+			max-width: none
+		.consent
+			margin: 10px auto 0
+
+	.sales .form-download label
+		margin: 0 16px 0 0		
 
 @media only screen and (max-width: 576px)
+	h1
+		font-size: 34px
+
+	h2
+		font-size: 30px
+
+	.h3
+		font-size: 24px
+
+	.subtitle
+		font-size: 20px
+
+	.home-content .box-text
+		font-size: 18px
+
+	.about
+		padding: 100px 0 60px
+		.btn-video
+			margin: 20px 0 0 0
+
+	.btn-video
+		font-size: 13px
+		&__icon
+			width: 100px
+			height: 100px
+			min-width: 100px
+			&:after
+				width: 50px
+				height: 50px
+			span
+				width: 14px
+				height: 22px
+
+	.nav-tabs
+		.nav-link
+			max-width: calc(50% - 10px)
+
+	.download-portfolio
+		margin: 20px auto 0
+		padding: 30px
+
+	.form-download button
+		width: 100%
+		max-width: none
+
+	.slick-arrow
+		width: 30px
+		height: 30px
+
+	.slick-prev
+		top: 30px
+
+	.slick-next
+		bottom: 30px
+
+	.work
+		.btn-group
+			flex-direction: column
+			align-items: center
+
+	.link-all
+		order: -1
+		margin: 0 auto 10px
+
+	.warranty
+		padding: 60px 0
+		h2
+			margin: 0 auto 30px
+
+	.warranty-box
+		padding: 30px
+		&__body
+			font-size: 16px
+
+	.callback-box
+		padding: 30px
+		text-align: center
+		max-width: none
+		.subtitle
+			font-size: 16px
+			margin: 15px 0
+
+	.warranty-document
+		font-size: 15px
+		&__icon
+			width: 50px
+			min-width: 50px
+			margin: 0 10px 0 0
+			&::before
+				width: 60px
+				height: 60px
+				left: 50%
+				bottom: -5px
+				transform: translate(-50%,0)
+
+	.advantages-box
+		max-width: none
+		br
+			display: none	
+
+	.licenses 
+		.warranty-document__icon
+			min-width: 50px
+			width: 50px
+			height: auto
+			&::before
+				width: 45px
+				height: 45px
+				left: 50%
+				transform: translate(-50%,0)
+		.warranty-document__text
+			max-width: 220px
+			
+	.link-instruction
+		text-align: left
+
+	.question .callback-box 
+		padding: 30px
+		.subtitle
+			margin: 20px auto
+
+	.question-box__text
+		max-width: none
+
+	.question-box__title
+		font-size: 18px
+
+	.team-box
+		&__name
+			font-size: 18px
+
+	.team-box.js-tab-trigger
+		flex-direction: column
+		align-items: center
+		text-align: center
+		.team-box__photo
+			margin: 0 auto 10px
+		
+	.team-box.js-tab-content 
+		font-size: 16px
+		.team-box__photo
+			width: 280px
+			height: 300px
+			min-width: 280px
+			margin: 0 auto 20px
+			&::before
+				width: 280px
+				height: 280px	
+
+	.contacts-wrapper
+		padding: 30px
+		max-width: none
+		box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		margin: 30px auto
+		&:after
+			display: none
+		
+	.map
+		position: relative
+		height: 300px
+
+	.contacts
+		padding: 0	
+
+	.route-box
+		align-items: flex-start
+		&__icon
+			margin: 3px 5px 0 0
+
+	.schedule
+		width: 100%
+		margin: 10px 0 0	
+
+	.sales 
+		.form-download 
+			flex-wrap: wrap
+			label	
+				width: 100%
+				margin: 0 0 16px
+				max-width: none	
+			button
+				width: 100%	
+
+	.footer-top, .footer-bottom
+		padding: 20px 0
+
+	.footer-top
+		padding: 20px 0 0
+		font-size: 14px
+
+	.description-company
+		font-size: 12px
+		line-height: 1.2
+		margin: 10px 0 		
+
+	.footer-box
+		margin: 0 0 20px
+
+	.link
+		margin: 0 0 20px	
+
+	.modal-dialog
+		margin: 20px auto
+
+	.modal-content
+		padding: 30px
+		text-align: center
+
+	.modal-header .subtitle
+		font-size: 16px
+		margin: 20px 0 0			
 
 @media only screen and (max-width: 480px)
+	.logo
+		max-width: 100px
+
+	.wrapper
+		padding: 51px 0 0
+
+	.btn-sm
+		padding: 8px 12px
+		font-size: 11px
+
+	.header-top
+		.header-box
+			margin: 0 0 0 10px
+		.btn
+			margin: 0 0 0 10px
+
+	.you-clients-box
+		max-width: none
+
+	h1
+		font-size: 30px
+
+	.subtitle
+		font-size: 18px
+
+	.product-card
+		&__img
+			height: 200px
+
+	.mb-37
+		margin-bottom: 20px
+
+	.licenses 
+		.btn
+			width: 100%	
 
 @media only screen and (max-width: 420px)
+	.you-clients-image
+		max-width: 320px
+		height: 200px
 
-@media only screen and (max-width: 370px)	
+	.fullscreen-bg__video
+		margin: 0 0 28px
+		width: 95px
+		height: 85px
+
+	h2, .about-box p
+		font-size: 24px
+
+	h1
+		font-size: 26px
+
+	.home-content
+		padding: 30px
+		.box-text
+			font-size: 16px
+
+	.btn-md
+		padding: 10px 13px
+		font-size: 12px
+
+	.work-item
+		margin: 0 0 10px
+		height: 250px
+
+	.work-item.h285
+		height: 220px
+
+	.work-item.h185
+		height: 130px
+
+	.work-slider-column
+		width: calc(50% - 10px)
+
+@media only screen and (max-width: 370px)
+	.logo
+		max-width: 80px
+
+	.wrapper
+		padding: 40px 0 0
+
+	header
+		.btn
+			font-size: 10px
+			padding: 6px 8px
+
+	.nav-tabs
+		align-items: stretch
+		.nav-link
+			height: 100%
+			// max-width: none	
+			margin: 0 0 10px
+			padding: 10px
+			width: calc(50% - 5px)
+			max-width: none

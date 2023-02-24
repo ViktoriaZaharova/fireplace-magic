@@ -46,6 +46,9 @@ body
 	background: #fff
 	color: #000
 
+html, body
+	overflow-x: hidden 	
+
 img
 	display: block
 	max-width: 100%
@@ -204,6 +207,7 @@ h1
 	font-weight: normal
 	span
 		font-style: italic
+		display: block
 
 h2
 	font-size: 58px
@@ -212,6 +216,7 @@ h2
 	font-family: $title-font
 	span
 		font-style: italic
+		display: block
 
 .h3
 	font-size: 36px
@@ -322,15 +327,19 @@ h2
 .list-checked
 	li
 		margin: 0 0 30px
-		padding: 0 0 0 57px
+		// padding: 0 0 0 57px
 		position: relative
+		display: flex
+		align-items: start
 		&::before
 			content: ''
-			position: absolute
-			left: 0
-			top: 0
+			// position: absolute
+			// left: 0
+			// top: 0
 			width: 41px
+			min-width: 41px
 			height: 41px
+			margin: 0 16px 0 0
 			background: url('../img/check.png') no-repeat center
 			background-size: contain
 		&:last-child

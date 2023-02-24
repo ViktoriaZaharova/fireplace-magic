@@ -124,8 +124,95 @@ footer {
 
 .link-politics {
   margin: 0 0 0 auto;
+  text-align: right;
   color: #606060;
 }
 .link-politics:hover {
   color: #f18231;
+}
+
+.modal-backdrop {
+  background: #090602;
+}
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.modal-dialog {
+  max-width: 420px;
+  -webkit-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+}
+
+.modal-content {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  padding: 60px 52px;
+}
+.modal-content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border: solid 1px #ece4d4;
+  border-radius: 6px;
+}
+
+.modal-header {
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: none;
+}
+.modal-header .subtitle {
+  margin: 25px 0 0;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.modal-header .btn-close {
+  position: absolute;
+  margin: 0;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 8px;
+  right: 8px;
+  opacity: 1;
+  z-index: 1;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.17);
+  border: solid 1px #ece4d4;
+  background: #ece4d4;
+  width: 26px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal-header .btn-close:hover {
+  background: #f18231;
+}
+
+.modal-title {
+  line-height: 1.17;
+}
+
+.modal-body {
+  padding: 0;
+  margin: 25px 0 0;
+  border: none;
 }

@@ -52,6 +52,7 @@
   z-index: 1;
   padding: 138px 0 55px;
   color: #fff;
+  overflow: hidden;
 }
 .home-bg {
   position: absolute;
@@ -134,7 +135,7 @@
 }
 .about .btn-video {
   color: #fff;
-  margin: 86px 0 0;
+  margin: 86px 0 0 auto;
 }
 .about .btn-video:hover {
   color: #f18231;
@@ -494,6 +495,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 80px auto 0;
 }
 .download-portfolio::before {
   content: "";
@@ -569,9 +571,6 @@
 .work .subtitle {
   margin: 50px 0;
   max-width: 492px;
-}
-.work h2 span {
-  display: block;
 }
 
 .link-all {
@@ -747,9 +746,6 @@
   margin: 0 auto 64px;
   color: #fff;
 }
-.warranty h2 span {
-  display: block;
-}
 .warranty-bg {
   position: absolute;
   left: 0;
@@ -886,6 +882,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 71px;
+  min-width: 71px;
   margin: 0 24px 0 0;
   z-index: 1;
 }
@@ -907,9 +904,6 @@
 }
 .advantages h2 {
   margin: 0 0 46px;
-}
-.advantages h2 span {
-  display: block;
 }
 .advantages .btn {
   margin: 24px 0 0;
@@ -983,9 +977,6 @@
   margin: 0 auto 25px;
   text-align: center;
   color: #fff;
-}
-.licenses h2 span {
-  display: block;
 }
 .licenses-bg {
   position: absolute;
@@ -1170,9 +1161,6 @@
   margin: 29px 0 52px;
   max-width: 660px;
 }
-.team h2 span {
-  display: block;
-}
 
 .js-tab-content {
   display: none;
@@ -1188,6 +1176,7 @@
 }
 
 .team-box {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

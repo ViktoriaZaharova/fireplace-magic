@@ -7,6 +7,7 @@
 	z-index: 1
 	padding: 138px 0 55px
 	color: #fff
+	overflow: hidden
 	&-bg
 		position: absolute
 		left: 0
@@ -73,9 +74,10 @@
 	background-size: cover
 	.btn-video
 		color: #fff
-		margin: 86px 0 0
+		margin: 86px 0 0 auto
 		&:hover
 			color: $accent
+		
 
 .about-box
 	margin: 48px 0 0
@@ -332,6 +334,7 @@
 	padding: 50px 56px
 	display: flex
 	align-items: center
+	margin: 80px auto 0
 	&::before
 		content: ''
 		position: absolute
@@ -386,9 +389,7 @@
 	.subtitle
 		margin: 50px 0
 		max-width: 492px
-	h2
-		span
-			display: block
+
 
 .link-all
 	display: flex
@@ -506,8 +507,7 @@
 		text-align: center
 		margin: 0 auto 64px
 		color: #fff
-		span
-			display: block
+
 
 	&-bg
 		position: absolute
@@ -609,6 +609,7 @@
 		position: relative
 		@include d-flex
 		width: 71px
+		min-width: 71px
 		margin: 0 24px 0 0
 		z-index: 1
 		&:before
@@ -630,8 +631,7 @@
 	padding: 102px 0 120px
 	h2
 		margin: 0 0 46px
-		span
-			display: block
+
 	.btn
 		margin: 24px 0 0
 		padding: 16px 19px
@@ -691,8 +691,6 @@
 		margin: 0 auto 25px
 		text-align: center
 		color: #fff
-		span
-			display: block
 	&-bg
 		position: absolute
 		left: 0
@@ -818,9 +816,6 @@
 	.subtitle
 		margin: 29px 0 52px
 		max-width: 660px
-	h2
-		span
-			display: block
 
 .js-tab-content
 	display: none
@@ -831,6 +826,7 @@
 	display: none
 
 .team-box
+	width: 100%
 	display: flex
 	align-items: center
 	line-height: 1.25

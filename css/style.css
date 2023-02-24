@@ -97,6 +97,10 @@ body {
   color: #000;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -317,6 +321,7 @@ h1 {
 }
 h1 span {
   font-style: italic;
+  display: block;
 }
 
 h2 {
@@ -327,6 +332,7 @@ h2 {
 }
 h2 span {
   font-style: italic;
+  display: block;
 }
 
 .h3 {
@@ -545,16 +551,20 @@ h2 span {
 }
 .list-checked li {
   margin: 0 0 30px;
-  padding: 0 0 0 57px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .list-checked li::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 41px;
+  min-width: 41px;
   height: 41px;
+  margin: 0 16px 0 0;
   background: url("../img/check.png") no-repeat center;
   background-size: contain;
 }
