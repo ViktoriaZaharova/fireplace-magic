@@ -46,3 +46,74 @@ $(document).ready(function () {
 });
 // scroll brands end
 
+
+$(document).ready(function () {
+	var block_show = null;
+
+	function scrollTracking() {
+		var wt = $(window).scrollTop();
+		var wh = $(window).height();
+		var et = $('.you-clients').offset().top;
+		var eh = $('.you-clients').outerHeight();
+
+		if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
+			if (block_show == null || block_show == false) {
+				$.each($('.you-clients-box'), function (i, el) {
+					setTimeout(function () {
+						$(el).addClass("active");
+					}, 500 + (i * 500));
+				});
+			}
+			block_show = true;
+		} else {
+			if (block_show == null || block_show == true) {
+				$('.you-clients-box').removeClass('active');
+			}
+			block_show = false;
+		}
+	}
+
+	$(window).scroll(function () {
+		scrollTracking();
+	});
+
+	$(document).ready(function () {
+		scrollTracking();
+	});
+});
+
+// sliders
+$('.work-slider1').slick({
+	slidesToShow: 3,
+	adaptiveHeight: true,
+	infinite: true,
+	vertical: true,
+	verticalSwiping: true,
+	centerMode: true,
+	prevArrow:  '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>'
+});
+
+$('.work-slider2').slick({
+	slidesToShow: 2,
+	infinite: true,
+	vertical: true,
+	verticalSwiping: true,
+	centerMode: true,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>'
+});
+// sliders end
+
+$(document).ready(function () {
+	$(".js-tab-trigger").click(function () {
+		var id = $(this).attr('data-tab'),
+			content = $('.js-tab-content[data-tab="' + id + '"]');
+
+		$('.js-tab-trigger.active').removeClass('active'); // 1
+		$(this).addClass('active'); // 2
+
+		$('.js-tab-content.active').removeClass('active'); // 3
+		content.addClass('active'); // 4
+	});
+});

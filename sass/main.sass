@@ -149,6 +149,8 @@
 	font-size: 20px
 	line-height: 1.2
 	max-width: 230px
+	opacity: 0
+	transition: .3s ease
 	&::before
 		content: ''
 		@include d-flex
@@ -160,6 +162,8 @@
 		background: url('../img/check.png') no-repeat center
 		background-size: cover
 		z-index: -1
+	&.active
+		opacity: 1
 
 .you-clients-box1
 	left: 24px
@@ -205,16 +209,299 @@
 	.subtitle
 		margin: 0 auto 65px
 		text-align: center
-		font-size: 26px
 		width: 100%
 
+.nav-tabs-column
+	width: 100%
+
+.nav-tabs
+	border: none
+	border-radius: 0
+	width: 100%
+	max-width: 205px
+
+	.nav-link
+		margin: 0 0 18px
+		width: 100%
+		min-height: 60px
+		padding: 14px 20px
+		font-size: 12px
+		font-weight: 500
+		line-height: 1.33
+		color: #000
+		border-radius: 6px
+		background-blend-mode: exclusion
+		background-image: linear-gradient(to bottom, #f9f2e3, #f9f2e3)
+		border: none
+		@include d-flex
+		text-align: center
+		width: 100%
+		text-transform: uppercase
+		&:last-child
+			margin: 0
+		&:hover, &.active
+			background: #000
+			color: $accent
+
+.product-card
+	width: 100%
+	height: 100%
+	background: #fff
+	border-radius: 6px
+	transition: .3s ease
+	padding: 24px
+	line-height: 1.5
+	font-size: 16px
+	cursor: pointer
+	position: relative
+	z-index: 1
+	&:hover
+		box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		.product-card__title
+			color: $accent
+	&__img
+		@include d-flex
+		margin: 0 auto 23px
+		height: 265px
+		img
+			max-height: 100%
+	&__title
+		text-align: center
+		width: 100%
+		color: #000
+	&__hover
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		border: solid 1px rgba(#fff, .4)
+		border-radius: 6px
+		background: rgba(#000, .4)
+		width: calc(100% - 20px)
+		height: calc(100% - 20px)
+		color: #fff
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		font-size: 12px
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+		&:hover
+			color: $accent
+		&-title
+			max-width: 140px
+			margin: 0 auto
+			display: block
+	.btn-video
+		color: #fff
+		flex-direction: column
+		&__icon
+			margin: 0 auto -5px
+			width: 102px
+			height: 102px
+			min-width: 102px
+			&:after
+				width: 68px
+				height: 68px
+			span
+				width: 14px
+				height: 19px
+				background: #f2c99c
+
+.product-card-video
+	padding: 0
+	.product-card__img
+		width: 100%
+		height: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 6px
+
+.download-portfolio
+	width: 100%
+	border-radius: 6px
+	box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+	background-color: #fff
+	position: relative
+	z-index: 1
+	padding: 50px 56px
+	display: flex
+	align-items: center
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% - 30px)
+		height: calc(100% - 30px)
+		border: solid 1px #ece4d4
+		border-radius: 6px
+		z-index: -1
+	&__img
+		max-width: 610px
+		width: 100%
+		position: absolute
+		bottom: -20px
+		left: -40px
+		@include d-flex
+	&__content
+		margin: 0 0 0 auto
+		max-width: 485px
+	.subtitle
+		text-align: left
+		max-width: 420px
+		margin: 30px 0
+		font-size: 20px
+		line-height: 1.3
+	&__title
+		span
+			display: block
+
+.form-download
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	label
+		margin: 0 18px 0 0
+		max-width: 285px
+		width: calc(100% - 174px)
+	button
+		max-width: 174px
+		width: 100%
+	.consent
+		margin: 16px 0 0
+
 // category end
+
+// work
+.work
+	background: #fafafa
+	.subtitle
+		margin: 50px 0
+		max-width: 492px
+	h2
+		span
+			display: block
+
+.link-all
+	display: flex
+	align-items: center
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 500
+	color: #000
+	margin: 0 0 0 37px
+	&:hover
+		color: $accent
+	&__icon
+		@include d-flex
+		min-width: 18px
+		width: 18px
+		height: 9px
+		margin: 0 0 0 7px
+
+.work-slider-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+
+.work-item
+	position: relative
+	width: 100%
+	height: 330px
+	border-radius: 12px
+	z-index: 1
+	color: #fefefe
+	margin: 0 0 30px
+	font-size: 15px
+	font-weight: 500
+	overflow: hidden
+	img
+		border-radius: 12px
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&:hover
+		color: #fefefe
+		.work-item__hover
+			opacity: 1
+	&__hover
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% - 20px)
+		height: calc(100% - 20px)
+		transition: .3s ease
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		border: solid 1px rgba(#fff, .4)
+		background: rgba(#000, .4)
+		box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		border-radius: 6px
+		text-transform: uppercase
+		opacity: 0
+		&::before
+			content: ''
+			@include d-flex
+			width: 26px
+			height: 26px
+			background: url('../img/magnifying-glass.svg') no-repeat center
+			background-size: contain
+			margin: 0 auto 15px
+		&:hover
+			color: #fefefe
+
+	&.h285
+		height: 285px
+	&.h185
+		height: 185px
+
+.work-slider-column
+	width: calc(50% - 15px)
+
+.work-slider
+	position: relative
+	height: 100%
+	&::before, &:after
+		content: ''
+		position: absolute
+		width: 100%
+		z-index: 1
+		height: 100px
+		left: 0
+	&::before
+		background: linear-gradient(to bottom, rgba(250,250,250,1) 0%,rgba(255,255,255,0) 100%)
+		top: 0
+	&:after
+		bottom: 0
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(250,250,250,1) 100%)
+
+.work-item-video
+	.work-item__hover
+		&::before
+			width: 49px
+			height: 34px
+			background: url('../img/youtube.svg') no-repeat	center
+			background-size: contain
+// work end
 
 // warranty
 .warranty
 	position: relative
 	z-index: 1
 	padding: 147px 0 127px
+	overflow: hidden
 	h2
 		text-align: center
 		margin: 0 auto 64px
@@ -234,7 +521,7 @@
 		transition: all .2s ease
 		z-index: -1
 	.callback-box
-		margin: 0 0 0 -290px	
+		margin: 0 0 0 -290px
 
 .warranty-wrapper
 	position: relative
@@ -261,6 +548,8 @@
 		font-size: 20px
 		max-width: 305px
 		line-height: 1.3
+	&__title
+		margin: 0 0 28px
 	&::before
 		content: ''
 		position: absolute
@@ -283,6 +572,8 @@
 	position: relative
 	z-index: 1
 	padding: 60px 55px
+	.btn
+		width: 100%
 	&::before
 		content: ''
 		position: absolute
@@ -294,14 +585,11 @@
 		height: calc(100% - 30px)
 		border: solid 1px #ece4d4
 		border-radius: 6px
-	&__title
-		width: 100%
-		font-size: 36px
-		font-family: $title-font
+
 	.subtitle
 		font-size: 20px
-		margin: 25px 0 29px	
-		line-height: 1.3	
+		margin: 25px 0 29px
+		line-height: 1.3
 
 .warranty-document
 	display: flex
@@ -309,6 +597,7 @@
 	color: #fffefe
 	font-size: 20px
 	font-weight: bold
+	line-height: 1.3
 	font-family: $title-font
 	font-style: italic
 	max-width: 835px
@@ -381,8 +670,6 @@
 .quote-title
 	margin: 0 0 35px
 	line-height: 1.17
-	font-size: 36px
-	font-family: $title-font
 
 .advantages-box
 	margin: 44px 0 0
@@ -394,3 +681,352 @@
 		margin: 0 0 25px
 
 // advantages end
+
+// licenses	
+.licenses
+	position: relative
+	overflow: hidden
+	padding: 135px 0
+	h2
+		margin: 0 auto 25px
+		text-align: center
+		color: #fff
+		span
+			display: block
+	&-bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: url('../img/bg5.jpg') no-repeat center
+		background-size: cover
+		background-attachment: fixed
+		transition: all .2s ease
+		z-index: -1
+	.btn
+		margin: 0 auto
+		padding: 23.5px 36px
+	.warranty-wrapper
+		align-items: center
+	.warranty-box
+		max-width: 790px
+		margin: 0
+		&__body
+			max-width: 450px
+	.warranty-document
+		margin: -30px auto 20px
+		&__text
+			position: relative
+			max-width: 280px
+			z-index: 1
+			&::before
+				content: ''
+				position: absolute
+				width: 49px
+				height: 23px
+				background: url('../img/arrow-decor.png') no-repeat center
+				background-size: contain
+				right: -23px
+				bottom: -10px
+		&__icon
+			width: 70px
+			height: 82px
+			&::before
+				top: 4px
+				left: -4px
+
+.licensies-image
+	margin: 0 0 0 -250px
+	position: relative
+	z-index: 1
+	max-width: 385px
+	width: 100%
+	@include d-flex
+
+// licenses end	
+
+// question 	
+.question
+	padding: 119px 0 131px
+	h2
+		margin: 0 0 44px
+	.callback-box
+		margin: 0 0 0 auto
+		padding: 20px 55px 53px
+		&__img
+			margin: 0 0 13px
+			width: 100%
+			@include d-flex
+		&__title
+			text-align: center
+		.subtitle
+			margin: 25px 0 20px
+
+.link-instruction
+	display: flex
+	align-items: center
+	color: #606060
+	font-style: italic
+	margin: 20px 0 30px
+	&:hover
+		color: $accent
+	&__icon
+		@include d-flex
+		margin: 0 14px 0 0
+		width: 42px
+		min-width: 42px
+		height: 42px
+		border-radius: 50%
+		background: rgba(#f18231, .2)
+		position: relative
+		z-index: 1
+		padding: 15px
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			border-radius: 50%
+			background: #f18231
+			width: 26px
+			height: 26px
+			z-index: -1
+
+.question-box
+	margin: 40px 0
+	&__icon
+		display: flex
+		align-items: center
+		margin: 0 0 24px
+	&__title
+		margin: 0 0 20px
+		font-size: 20px
+		font-style: italic
+		font-family: $title-font
+		font-weight: bold
+	&__text
+		line-height: 1.25
+		max-width: 294px
+// question end
+
+// team
+.team
+	padding: 120px 0
+	background: #fafafa
+	.subtitle
+		margin: 29px 0 52px
+		max-width: 660px
+	h2
+		span
+			display: block
+
+.js-tab-content
+	display: none
+	&.active
+		display: flex
+
+.team-box.js-tab-trigger.active
+	display: none
+
+.team-box
+	display: flex
+	align-items: center
+	line-height: 1.25
+	margin: 0 0 23px
+	&.js-tab-trigger
+		cursor: pointer
+	&__photo
+		width: 181px
+		min-width: 181px
+		height: 203px
+		position: relative
+		z-index: 1
+		@include d-flex
+		margin: 0 33px 0 0
+		&::before
+			content: ''
+			position: absolute
+			width: 181px
+			height: 181px
+			border-radius: 50%
+			z-index: -1
+			bottom: 0
+			left: 48.5%
+			transform: translate(-50%,0)
+			background: #252A2D
+		img
+			max-height: 100%
+			height: 100%
+	&__name
+		font-size: 20px
+		font-weight: bold
+		margin: 0 0 8px
+		font-family: $title-font
+		font-style: italic
+	&.js-tab-content
+		flex-direction: column
+		text-align: center
+		font-size: 20px
+		display: none
+		&.active
+			display: flex
+		.team-box__photo
+			width: 502px
+			height: 582px
+			margin: 0 auto 36px
+			&::before
+				width: 502px
+				height: 502px
+		.team-box__name
+			margin: 0 auto 15px
+		.team-box__body
+			max-width: 365px
+
+// team end
+
+// contacts	
+.contacts
+	position: relative
+	overflow: hidden
+	z-index: 1
+	padding: 100px 0
+
+.map
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	iframe
+		width: 100%
+		height: 100%
+		filter: grayscale(1)
+
+.contacts-wrapper
+	position: relative
+	z-index: 2
+	background: #fff
+	max-width: 420px
+	width: 100%
+	border-radius: 6px
+	padding: 55px 50px
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 0 0 35px
+	&:after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		right: -21px
+		border-left: 21px solid #fff
+		border-bottom: 13.5px solid transparent	
+		border-top: 13.5px solid transparent	
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% - 30px)
+		height: calc(100% - 30px)
+		border: solid 1px #ece4d4
+		border-radius: 6px
+
+.contacts-box
+	width: 100%
+	display: flex
+	align-items: flex-start
+	margin: 0 0 20px
+	line-height: 1.38
+	a
+		color: #000
+		&:hover
+			color: $accent
+	&__icon
+		width: 14px
+		height: 14px
+		min-width: 14px
+		@include d-flex
+		margin: 5px 11px 0 0
+
+.route-box
+	width: 100%
+	display: flex
+	align-items: center
+	margin: 0 0 15px
+	&:last-child
+		margin: 0
+	&__icon
+		width: 12px
+		height: 14px
+		min-width: 12px
+		@include d-flex
+		margin: 0 10px 0 0
+	span
+		img
+			width: 8px
+			display: inline
+			margin: 0 5px 0 0
+	&__body
+		width: 100%
+		span
+			margin: 0 0 0 10px
+
+.contacts-reviews
+	text-decoration: underline
+	color: #000
+	&:hover
+		color: $accent
+
+.dropdown-toggle
+	color: #000
+	&:hover
+		color: $accent
+	&:after
+		border-top: 6px solid #b2b2b2
+		border-right: 4.5px solid transparent
+		border-left: 4.5px solid transparent
+
+.dropdown-menu
+	padding: 10px
+	font-size: 14px
+	p
+		margin: 0 0 5px
+		&:last-child
+			margin: 0		
+// contacts end	
+
+// sales
+.sales
+	padding: 58px 0
+	background: #464646
+	&-title
+		max-width: 320px
+		font-size: 20px
+		font-weight: 500
+		color: #fff
+		span
+			font-family: $title-font
+			font-weight: bold
+	.form-download
+		width: fit-content
+		flex-wrap: nowrap
+		margin: 0 auto
+		label
+			width: 306px
+			max-width: none
+			min-width: 306px
+		input
+			background: #fff
+
+
+
+// sales end

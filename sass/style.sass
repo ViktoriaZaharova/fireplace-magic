@@ -150,6 +150,13 @@ button, .btn
 		background: $accent
 		color: #fff
 
+.btn-group
+	flex-wrap: wrap
+	align-items: center
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
+	border-radius: 6px			
+
 .svg-icon
 	display: inline-block
 	width: 100%
@@ -168,6 +175,9 @@ ul, ol
 
 .list-dots
 	list-style-type: disc
+
+.mb-37
+	margin-bottom: 37px
 
 .container
 	max-width: 1200px
@@ -202,6 +212,16 @@ h2
 	font-family: $title-font
 	span
 		font-style: italic
+
+.h3
+	font-size: 36px
+	font-family: $title-font
+	width: 100%
+	margin: 0
+
+.subtitle
+	font-size: 26px
+	line-height: 1.27	
 
 .btn-video
 	display: flex
@@ -314,7 +334,7 @@ h2
 			background: url('../img/check.png') no-repeat center
 			background-size: contain
 		&:last-child
-			margin: 0	
+			margin: 0
 
 .form
 	[type="submit"]
@@ -326,7 +346,7 @@ h2
 	color: #606060
 	font-size: 12px
 	font-weight: 300
-	line-height: 1.25						
+	line-height: 1.25
 
 // slick
 .slick-slider
@@ -334,6 +354,49 @@ h2
 
 .slick-slide
 	outline: none
+
+.slick-arrow
+	@include d-flex
+	width: 50px
+	height: 50px
+	position: absolute
+	z-index: 2
+	left: 50%
+	transform: translate(-50%,0)
+	border: none
+	border-radius: 50%
+	box-shadow: 4.1px 4.4px 21px 0 rgba(0, 0, 0, 0.18)
+	padding: 0
+	background: transparent
+
+.slick-next
+	bottom: 50px
+	background: url('../img/down.svg') no-repeat center
+	background-size: contain
+
+.slick-prev
+	top: 50px
+	background: url('../img/up.svg') no-repeat center
+	background-size: contain
+
+.list-social
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 15px 0 0
+		&:last-child
+			margin: 0
+		a
+			border-radius: 50%
+			background: #7d7d7d
+			padding: 12px
+			width: 44px
+			height: 44px
+			min-width: 44px
+			@include d-flex	
+			&:hover
+				background: $accent
 
 //checkbox my
 .label-checkbox
