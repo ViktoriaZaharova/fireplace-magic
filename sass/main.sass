@@ -10,16 +10,16 @@
 	overflow: hidden
 	&-bg
 		position: absolute
-		left: 50%
-		top: 50%
-		transform: translate3d(0, 0, 0) translate(-50%, -50%)
+		top: 0
+		left: 0
 		width: 100%
 		height: 100%
 		background: url('../img/home-bg.jpg') no-repeat center
 		background-size: cover
-		// background-attachment: fixed
+		background-attachment: fixed
 		transition: all .2s ease
 		z-index: -1
+		@include d-flex
 
 .home-content
 	border-radius: 6px
@@ -523,15 +523,16 @@
 
 	&-bg
 		position: absolute
-		left: 0
-		top: 0
 		width: 100%
 		height: 100%
+		top: 0
+		left: 0
 		background: url('../img/bg4.jpg') no-repeat center
 		background-size: cover
 		background-attachment: fixed
 		transition: all .2s ease
 		z-index: -1
+		@include d-flex
 	.callback-box
 		margin: 0 0 0 -290px
 
@@ -714,6 +715,7 @@
 		background-attachment: fixed
 		transition: all .2s ease
 		z-index: -1
+		@include d-flex
 	.btn
 		margin: 0 auto
 		padding: 23.5px 36px

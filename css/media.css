@@ -353,6 +353,25 @@
   .link {
     margin: 0 0 30px;
   }
+  .licenses-bg, .warranty-bg, .home-bg {
+    top: 50%;
+    left: 50%;
+    background-attachment: none;
+    -webkit-transform: translate3d(0, 0, 0) translate(-50%, -50%);
+            transform: translate3d(0, 0, 0) translate(-50%, -50%);
+  }
+  .licenses-bg {
+    height: calc(100% + 1200px);
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0) translate(-50%, 0);
+            transform: translate3d(0, 0, 0) translate(-50%, 0);
+  }
+  .warranty-bg {
+    height: calc(100% + 900px);
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0) translate(-50%, 0);
+            transform: translate3d(0, 0, 0) translate(-50%, 0);
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -479,6 +498,14 @@
   .team-box__photo::before {
     width: 120px;
     height: 120px;
+  }
+  .clients-logos .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -829,6 +856,9 @@
   }
   .licenses .btn {
     width: 100%;
+  }
+  .warranty-bg {
+    height: calc(100% + 800px);
   }
 }
 @media only screen and (max-width: 420px) {
