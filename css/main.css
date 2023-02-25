@@ -50,7 +50,7 @@
 .home {
   position: relative;
   z-index: 1;
-  padding: 138px 0 55px;
+  padding: 78px 0 55px;
   color: #fff;
   overflow: hidden;
 }
@@ -113,7 +113,7 @@
 
 .clients-wrapper {
   width: 100%;
-  margin: 140px 0 0;
+  margin: 100px 0 0;
   position: relative;
   overflow: hidden;
 }
