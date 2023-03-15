@@ -397,7 +397,6 @@
 		margin: 50px 0
 		max-width: 492px
 
-
 .link-all
 	display: flex
 	align-items: center
@@ -519,7 +518,6 @@
 		text-align: center
 		margin: 0 auto 64px
 		color: #fff
-
 
 	&-bg
 		position: absolute
@@ -936,8 +934,8 @@
 		transform: translate(0,-50%)
 		right: -21px
 		border-left: 21px solid #fff
-		border-bottom: 13.5px solid transparent	
-		border-top: 13.5px solid transparent	
+		border-bottom: 13.5px solid transparent
+		border-top: 13.5px solid transparent
 	&::before
 		content: ''
 		position: absolute
@@ -1011,7 +1009,7 @@
 	p
 		margin: 0 0 5px
 		&:last-child
-			margin: 0		
+			margin: 0
 // contacts end	
 
 // sales
@@ -1036,7 +1034,391 @@
 			min-width: 306px
 		input
 			background: #fff
-
-
-
 // sales end
+
+// page portfolio
+.page-portfolio
+	margin: 0 0 130px
+
+.portfolio-section
+	margin: 0 0 65px
+	&:nth-child(odd)
+		.portfolio-gallery-presentation
+			order: -1
+			padding: 0 30px 0 0
+
+.portfolio-content
+	display: flex
+	flex-direction: column
+	height: 100%
+	width: 100%
+	.h3
+		font-style: italic
+		margin: 0 0 20px
+	.btn
+		margin: auto 0 0
+		padding: 23.5px 45px
+
+.portfolio-info
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.portfolio-info-box
+	display: flex
+	align-items: center
+	margin: 0 40px 20px 0
+	color: #010101
+	&:last-child
+		margin: 0 0 20px
+	&__icon
+		margin: 0 12px 0 0
+		@include d-flex
+
+.portfolio-body
+	width: 100%
+
+.portfolio-body-item
+	margin: 0 0 20px
+	color: #010101
+	line-height: 1.5
+	&__title
+		margin: 0 0 10px
+		color: #606060
+	&__text
+		p
+			margin: 0 0 15px
+
+.portfolio-gallery
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.portfolio-gallery-preview
+	max-width: 101px
+	width: 100%
+	padding: 28px 0
+
+	&__item
+		width: 100%
+		border-radius: 6px
+		height: 111px
+		img
+			border-radius: 6px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.slide
+		padding: 6px 6px
+		border: none
+		opacity: 0.5
+		position: relative
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			z-index: -1
+			border-radius: 6px
+			border: solid 2px #f18231
+			opacity: 0
+			transition: .3s ease
+		&.slick-current
+			opacity: 1
+			&::before
+				opacity: 1
+	.slick-arrow
+		width: 17px
+		height: 9px
+		border-radius: 0
+		padding: 0
+		box-shadow: none
+	.slick-prev
+		top: 0
+		background: url('../img/angle-up.svg') no-repeat center
+		background-size: contain
+	.slick-next
+		bottom: 0
+		background: url('../img/angle-down.svg') no-repeat center
+		background-size: contain
+
+.portfolio-gallery-presentation
+	width: calc(100% - 101px)
+	padding: 0 0 0 30px
+	&__item
+		width: 100%
+		height: 680px
+		@include d-flex
+		border-radius: 6px
+		img
+			border-radius: 6px
+
+.btn-toggle-portfolio
+	margin: 0 auto
+	font-size: 12px
+	font-weight: 500
+// page portfolio end	
+
+// catalog page	
+.page-catalog
+	margin: 0 0 160px
+
+.sidebar
+	width: 100%
+	border-top: 1px solid rgba(#f5f4f0, .5)
+
+.sidebar-box
+	width: 100%
+	padding: 30px 0
+	border-bottom: 1px solid rgba(#f5f4f0, .5)
+
+.accordion-button
+	width: 100%
+	padding: 0
+	background: transparent
+	border: none
+	box-shadow: none
+	cursor: pointer
+	color: #000
+	font-size: 16px
+	font-weight: normal
+	&:not(.collapsed)
+		width: 100%
+		padding: 0
+		background: transparent
+		border: none
+		box-shadow: none
+		color: #000
+	&:after
+		background: transparent
+		border-top: 6px solid #464646
+		border-left: 4.5px solid transparent
+		border-right: 4.5px solid transparent
+		width: 0
+		height: 0
+
+.accordion-body
+	padding: 20px 0 0
+	width: 100%
+
+.range_val
+	width: 100%
+	.form-group
+		width: 100%
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		label
+			margin: 0 0 24px
+			width: calc(50% - 5px)
+		input
+			background: #f7f7f7
+			border: none
+			border-radius: 6px
+			text-align: center
+			height: 36px
+			color: #000
+			font-size: 14px
+	&-row
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 10px 0 0
+		color: #a9a9a9
+		font-size: 12px
+		font-weight: 300
+
+.ui-widget.ui-widget-content
+	border: none
+	border-radius: 2px
+	background: #f7f7f7
+	height: 4px
+
+.ui-widget-header
+	border-radius: 2px
+	background: #f18231
+
+.ui-slider .ui-slider-handle
+	width: 16px
+	height: 16px
+	border: none
+	border-radius: 50%
+	background: $accent
+	outline: none
+	box-shadow: none
+
+.ui-slider-horizontal .ui-slider-handle
+	top: -6px
+
+.btn-clear-filter
+	margin: 30px 0 0
+	background: #f9f2e3
+	height: 50px
+	font-size: 12px
+	width: 100%
+	&:hover
+		background: $accent
+		color: #fff
+
+.banner
+	width: 100%
+	position: relative
+	z-index: 1
+	padding: 62px 17px 33px
+	border-radius: 6px
+	margin: 30px 0 0
+	&-bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 6px
+		z-index: -1
+	&-content
+		max-width: 160px
+		width: 100%
+		margin: 0 0 0 auto
+		text-align: center
+	.btn
+		font-size: 12px
+		width: 100%
+		height: 50px
+	&-title
+		color: #fff
+		font-size: 20px
+		font-style: italic
+		font-family: $title-font
+		&:hover
+			color: $accent
+	&-description
+		margin: 27px auto
+		max-width: 90px
+
+.list-category-products
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin: 0 -4.5px
+	margin: 0 0 50px
+	li
+		margin: 0 0 8px
+		width: 14.2%
+		padding: 0 4.5px
+
+.category-products-card
+	width: 100%
+	height: 100%
+	text-align: center
+	border-radius: 6px
+	border: solid 1px #f5f4f0
+	background-color: #fff
+	font-size: 14px
+	color: #000
+	display: flex
+	flex-direction: column
+	padding: 20px 10px 17px
+	&__img
+		height: 60px
+		@include d-flex
+		margin: 0 auto 15px
+		img
+			max-height: 100%
+	&:hover
+		color: $accent
+		box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		border-color: #fff
+
+.filter-wrapper
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: space-between
+	margin: 0 0 25px
+
+.sorting-box
+	&__btn
+		color: #000
+		font-size: 14px
+		display: flex
+		align-items: center
+		&:after
+			content: ''
+			width: 11px
+			height: 6px
+			background: url('../img/angle-down.svg') no-repeat center
+			background-size: cover
+			margin: 0 0 0 11px
+		&:hover
+			color: $accent
+	.dropdown-menu
+		font-size: 14px
+		text-transform: uppercase
+		padding: 19px
+	.dropdown-item
+		text-transform: none
+		padding: 0
+		margin: 0 0 10px
+		&:last-child
+			margin: 0
+
+.nav-tabs-catalog
+	display: flex
+	align-items: flex-start
+	max-width: none
+	width: fit-content
+	.nav-item
+		margin: 0 9px 0 0
+		&:last-child
+			margin: 0
+			.nav-link
+				width: 14px
+	.nav-link
+		width: 18px
+		height: 14px
+		min-height: auto
+		@include d-flex
+		padding: 0
+		background: transparent
+		border: none
+		border-radius: 0
+		&.active
+			background: transparent
+			fill: $accent
+		&:hover
+			background: transparent
+
+.list-tags
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 14px
+	margin: 0 0 27px
+	li
+		margin: 0 8px 9px 0
+		a
+			border-radius: 6px
+			// box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.17)
+			background-color: #f9f2e3
+			padding: 11px 16px
+			color: #000
+			&:hover
+				color: #000
+	.list-tags-btn
+		a
+			background: #fff
+			color: $accent
+			font-weight: 500
+			&:hover
+				background: $accent
+				color: #fff
+
+// catalog page end	

@@ -44,7 +44,7 @@
 
 @media only screen and (max-width: 1200px)
 	.header-box
-		margin: 0 0 0 20px
+		margin: 0 0 0 10px
 		font-size: 15px
 
 	.logo
@@ -106,6 +106,9 @@
 	.header-top
 		.schedule-box
 			display: none
+
+	.header.fixed .dropdown-submenu
+		display: none		
 
 	.wrapper
 		padding: 61px 0 0
@@ -310,7 +313,24 @@
 	.link
 		margin: 0 0 30px	
 
-														
+	.header 
+		.header-bottom
+			display: none
+		.nav-menu
+			width: 100%
+			padding: 0
+		.form-search
+			margin: 0 0 20px
+		.dropdown-menu
+			position: relative !important
+			transform: none !important
+
+	.portfolio-content 
+		.btn
+			margin: 20px auto 0
+			
+	.portfolio-gallery
+		margin: 30px 0 0																			
 
 @media only screen and (max-width: 890px)
 	.warranty
@@ -713,7 +733,30 @@
 
 	.modal-header .subtitle
 		font-size: 16px
-		margin: 20px 0 0			
+		margin: 20px 0 0		
+		
+	.portfolio-gallery-presentation__item
+		height: auto
+
+	.portfolio-gallery-preview__item
+		height: 70px
+
+	.portfolio-gallery-preview
+		max-width: 80px
+		padding: 20px 0
+
+	.portfolio-gallery-presentation
+		width: calc(100% - 80px)
+		padding: 0 0 0 20px			
+
+	.page-portfolio
+		margin: 0 0 70px
+
+	.portfolio-section
+		margin: 0 0 40px
+
+	.page-portfolio h1
+		margin: 0 0 30px						
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -754,7 +797,34 @@
 
 	.warranty
 		&-bg
-			height: calc(100% + 800px)					
+			height: calc(100% + 800px)	
+
+	.portfolio-gallery-preview
+		max-width: 100%	
+		order: 1
+		padding: 0 20px
+		margin: 20px 0 0
+		.slick-arrow
+			top: 50%
+			transform: translate(0,-50%)	
+			padding: 10px
+			height: 16px
+			
+		.slick-prev
+			left: 0
+			background: url('../img/angle-left.svg') no-repeat center
+			background-size: contain
+		.slick-next
+			right: 0
+			left: auto
+			background: url('../img/angle-right.svg') no-repeat center
+			background-size: contain
+		&__item
+			height: 80px
+
+	.portfolio-gallery-presentation
+		padding: 0 
+		width: 100%						
 
 @media only screen and (max-width: 420px)
 	.you-clients-image

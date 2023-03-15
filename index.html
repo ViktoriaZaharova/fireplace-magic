@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -107,7 +108,8 @@
 									с гарантией до 5 лет</p>
 							</div>
 
-							<a href="#" class="btn btn-md btn-accent" data-bs-toggle="modal" data-bs-target="#modalCallback">Подобрать идеальный камин</a>
+							<a href="#" class="btn btn-md btn-accent" data-bs-toggle="modal" data-bs-target="#modalCallback">Подобрать
+								идеальный камин</a>
 						</div>
 					</div>
 				</div>
@@ -208,7 +210,7 @@
 						</div>
 					</div>
 
-					
+
 				</div>
 
 				<!-- <div class="row">
@@ -274,7 +276,8 @@
 							</div>
 						</div>
 
-						<a href="#" class="btn btn-md btn-grey" data-bs-toggle="modal" data-bs-target="#modalCallback">Подобрать идеальный камин</a>
+						<a href="#" class="btn btn-md btn-grey" data-bs-toggle="modal" data-bs-target="#modalCallback">Подобрать
+							идеальный камин</a>
 					</div>
 				</div>
 			</div>
@@ -605,7 +608,8 @@
 								решение</div>
 
 							<div class="btn-group">
-								<a href="#" class="btn btn-md btn-accent" data-bs-toggle="modal" data-bs-target="#modalCallback">получить бесплатный расчет</a>
+								<a href="#" class="btn btn-md btn-accent" data-bs-toggle="modal"
+									data-bs-target="#modalCallback">получить бесплатный расчет</a>
 
 								<a href="#" class="link-all">
 									<span class="link-all__text">все проекты</span>
@@ -1119,7 +1123,8 @@
 									проектирования дымохода</span>
 							</a>
 
-							<a href="#" class="btn btn-sm btn-grey" data-bs-toggle="modal" data-bs-target="#modalCallback">онлайн калькулятор дымохода</a>
+							<a href="#" class="btn btn-sm btn-grey" data-bs-toggle="modal" data-bs-target="#modalCallback">онлайн
+								калькулятор дымохода</a>
 						</div>
 					</div>
 				</div>
@@ -1426,9 +1431,11 @@
 						<div class="modal-title h3">
 							<span class="font-italic">Спасибо!</span>
 						</div>
-		
-						<div class="subtitle"><p>Ваша заявка принята.</p>
-						<p>Ожидайте звонка специалиста</p></div>
+
+						<div class="subtitle">
+							<p>Ваша заявка принята.</p>
+							<p>Ожидайте звонка специалиста</p>
+						</div>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="img/close.svg"
 								alt=""></button>
 					</div>
@@ -1443,9 +1450,92 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			var block_show = null;
+
+			function scrollTracking() {
+				var wt = $(window).scrollTop();
+				var wh = $(window).height();
+				var et = $('.you-clients').offset().top;
+				var eh = $('.you-clients').outerHeight();
+
+				if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
+					if (block_show == null || block_show == false) {
+						$.each($('.you-clients-box'), function (i, el) {
+							setTimeout(function () {
+								$(el).addClass("active");
+							}, 500 + (i * 500));
+						});
+					}
+					block_show = true;
+				} else {
+					if (block_show == null || block_show == true) {
+						$('.you-clients-box').removeClass('active');
+					}
+					block_show = false;
+				}
+			}
+
+			$(window).scroll(function () {
+				scrollTracking();
+			});
+
+			$(document).ready(function () {
+				scrollTracking();
+			});
+		});
+
+		// slick active
+		$(window).on('load resize', function () {
+			if ($(window).width() < 768) {
+				$('.clients-logos:not(.slick-initialized)').slick({
+					infinite: true,
+					slidesToShow: 3,
+					arrows: false,
+					autoplay: true,
+					autoplaySpeed: 2000,
+					responsive: [
+						{
+							breakpoint: 576,
+							settings: {
+								slidesToShow: 2,
+							}
+						}
+					]
+				});
+			} else {
+				$(".clients-logos.slick-initialized").slick("unslick");
+
+				// scroll brands
+				$(document).ready(function () {
+					var element = document.getElementById("scroll-section");
+					var cnt = 0;
+
+					document.addEventListener('wheel', function (event) {
+						event = event || window.event;
+						var y = event.deltaY || event.detail || event.wheelDelta, val = 0.3, min = 0, max = 0;
+
+						if (y > 0) {
+							cnt = cnt + 1;
+							element.style.transform = 'translate(' + cnt + '%)';
+						}
+						if (y < 0) {
+							cnt = cnt - 1;
+							element.style.transform = 'translate(' + cnt + '%)';
+						}
+					});
+				});
+				// scroll brands end
+			}
+		});
+// slick active
+	</script>
 
 </body>
 

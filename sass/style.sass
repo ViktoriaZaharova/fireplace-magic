@@ -153,6 +153,17 @@ button, .btn
 		background: $accent
 		color: #fff
 
+.btn-border-accent
+	color: $accent
+	border: 1px solid $accent
+	border-radius: 6px
+	padding: 13px 15px
+	height: 36px
+	font-size: 12px
+	&:hover
+		background: $accent
+		color: #fff
+
 .btn-group
 	flex-wrap: wrap
 	align-items: center
@@ -181,6 +192,9 @@ ul, ol
 
 .mb-37
 	margin-bottom: 37px
+
+.mb-20
+	margin-bottom: 20px
 
 .container
 	max-width: 1200px
@@ -223,6 +237,13 @@ h2
 	font-family: $title-font
 	width: 100%
 	margin: 0
+
+.page
+	h1
+		font-size: 36px
+		font-weight: 500
+		margin: 0 0 35px
+		font-family: $default-font
 
 .subtitle
 	font-size: 26px
@@ -341,6 +362,24 @@ h2
 		&:last-child
 			margin: 0
 
+.list-disc
+	line-height: 1.5
+	li
+		position: relative
+		padding: 0 0 0 20px
+		margin: 0 0 15px
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 8px
+			border-radius: 50%
+			background: #f18231
+			width: 6px
+			height: 6px
+
 .form
 	[type="submit"]
 		width: 100%
@@ -413,26 +452,129 @@ h2
 .label-checkbox
 	position: relative
 	display: flex
-	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
+	align-items: center
+	color: #000
 	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
+	margin: 0
+	cursor: pointer
 
 .inp-check
 	display: none
 
 .checkbox-custom
-	margin: 0 12px 0 0
+	margin: 0 11px 0 0
 	position: relative
 	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
+	background-color: #f7f7f7
+	width: 26px
+	height: 26px
+	min-width: 26px
 	cursor: pointer
 
 .inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
+	background: #464646 url('../img/check-white.svg') no-repeat center
+	background-size: 14px
+
+.checkbox-result-value
+	position: absolute
+	top: 50%
+	left: 100%
+	transform: translate(0,-50%)
+	padding: 18px 20px
+	border-radius: 6px
+	background-color: #fff
+	z-index: 2
+	white-space: nowrap
+	filter: drop-shadow(0px 0px 6px rgba(#000, .2))
+	margin: 0 0 0 30px
+	font-size: 14px
+	&::before
+		content: ''
+		position: absolute
+		border-right: 17px solid #fff
+		border-top: 11px solid transparent
+		border-bottom: 11px solid transparent
+		top: 50%
+		transform: translate(0,-50%)
+		left: -15px
+
+.list-checkbox
+	width: 100%
+	li
+		margin: 0 0 12px
+		&:last-child
+			margin: 0
+	.label-checkbox
+		width: fit-content
+
+.link-toggle-all
+	text-transform: uppercase
+	margin: 30px 0 0
+	font-size: 12px
+	font-weight: 500
+	&:hover
+		color: $grey
 //checkbox my end
+
+.dropdown-item
+	&:hover
+		background: transparent
+		color: $accent
+
+.breadcrumb
+	margin: 38px 0 29px
+	font-size: 14px
+	li
+		a
+			color: #000
+			&:hover
+				color: $accent
+
+.breadcrumb-item
+	display: flex
+	align-items: center
+	&.active
+		color: #f18231
+		text-decoration: underline
+
+.breadcrumb-item+.breadcrumb-item
+	padding: 0
+	&::before
+		padding: 0
+		margin: 0 5px
+		content: '|'
+		color: #000
+
+.nav-pagination
+	width: 100%
+	margin: 20px 0 
+
+.pagination
+	width: 100%
+	justify-content: center
+	font-size: 16px
+	.page-item
+		margin: 0
+		width: fit-content
+		&:not(:first-child) .page-link
+			margin: 0
+		&:first-child, &:last-child
+			.page-link
+				border-radius: 0
+				svg
+					width: 9px
+					height: 16px
+				&:hover
+					background: transparent
+					fill: $accent
+	.page-link
+		width: 40px
+		height: 40px
+		min-width: 40px
+		@include d-flex
+		border-radius: 50%
+		border: none
+		color: #000
+		&.active
+			background: $accent
+			color: #fff
