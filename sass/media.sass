@@ -362,7 +362,7 @@
 			top: -10px
 			left: 10px
 
-	.banner-v1
+	.page-catalog .banner-v1
 		display: none
 
 	.btn-filter
@@ -372,7 +372,37 @@
 		justify-content: flex-start
 
 	.nav-tabs-catalog
-		margin: 0 20px 0 auto			
+		margin: 0 20px 0 auto
+
+	.modal-body-product__gallery-preview
+		.item
+			width: 25%
+
+	.page-product
+		.modal-body-product__gallery
+			max-width: none
+			margin: 0 0 30px
+		.modal-body-product__info .list-characteristics
+			max-width: none
+		.manager-callback
+			margin: 30px auto
+
+	.social-share
+		justify-content: center
+
+	.product-information
+		max-width: none
+
+	.nav-tabs-product
+		margin: 40px 0 0
+		.nav-link
+			font-size: 16px
+
+	.tab-content-product
+		margin: 30px 0 0
+		.box-text
+			p
+				margin: 0 0 20px
 
 @media only screen and (max-width: 890px)
 	.warranty
@@ -425,12 +455,27 @@
 			margin: 0 auto 20px
 		.box-text
 			font-size: 16px
-			margin: 20px 0	
+			margin: 20px 0
 		&__name
 			top: 205px
 		.h3
-			text-align: center	
+			text-align: center
 
+	.banner-v3
+		.banner-title
+			max-width: none
+			width: 100%
+			text-align: center
+		.list-checked
+			margin: 10px auto
+			width: 100%
+			justify-content: center
+		.banner-content
+			.btn
+				max-width: none
+				width: fit-content
+				margin: 0 auto
+				white-space: nowrap
 
 @media only screen and (max-width: 768px)
 	.header-top
@@ -538,46 +583,46 @@
 
 	.page h1
 		font-size: 30px
-		margin: 0 0 30px		
+		margin: 0 0 30px
 
 	.nav-tabs-catalog .nav-link
 		max-width: none
 
-	.list-tags 
+	.list-tags
 		font-size: 12px
-		li 
-			a	
+		li
+			a
 				padding: 8px 10px
-		.list-tags-btn 
+		.list-tags-btn
 			a
 				height: 28px
-				font-size: 10px	
+				font-size: 10px
 
 	.list-category-products
-		margin: 0 0 20px			
+		margin: 0 0 20px
 
 	.filter-wrapper
 		margin: 0 0 15px
 
-	.product-card-catalog-row 
+	.product-card-catalog-row
 		flex-wrap: wrap
 		padding: 10px
-		.list-characteristics	
+		.list-characteristics
 			width: 100%
 			margin: 10px 0
 		.price-wrapper
 			width: fit-content
 		.btn-details
 			margin: 0 0 0 auto
-			display: flex		
+			display: flex
 		.product-card-catalog__title
 			width: calc(100% - 80px)
 			padding: 0 0 0 20px
 		.btn
-			height: 40px	
+			height: 40px
 		&:hover
 			.price-wrapper
-				display: block	
+				display: block
 
 	.page-catalog
 		margin: 0 0 100px
@@ -585,7 +630,40 @@
 	.manager-wrapper
 		margin: 60px 0 0
 
+	.modal-body-product
+		&__gallery
+			max-width: none
+			margin: 0 0 30px
+		&__info
+			.link
+				margin: 30px 0 0
+			.modal-title
+				text-align: left
 
+	.product-information
+		margin: 30px auto 0
+		max-width: 350px
+
+	.nav-tabs-product
+		justify-content: flex-start
+		.nav-item
+			margin: 0 0 10px
+			width: 33.33%
+		.nav-link
+			max-width: none
+			padding: 0 0 10px
+
+	.tab-content-product
+		margin: 20px 0 0
+
+	.additionali-list li
+		width: 25%
+
+	.similar-products
+		margin: 0 0 50px	
+
+	.viewed-products
+		margin: 0 0 60px	
 
 @media only screen and (max-width: 730px)
 	.you-clients
@@ -673,7 +751,7 @@
 				width: 14px
 				height: 22px
 
-	.nav-tabs
+	.category .nav-tabs
 		.nav-link
 			max-width: calc(50% - 10px)
 
@@ -875,12 +953,12 @@
 	.page-portfolio h1
 		margin: 0 0 30px
 
-	.list-category-products 
+	.list-category-products
 		li
 			width: 33.33%
 
 	.nav-tabs-catalog .nav-link
-		max-width: none			
+		max-width: none
 
 	.mb-120
 		margin-bottom: 70px
@@ -888,12 +966,43 @@
 	.seo-section
 		margin: 0 0 40px
 		.h3
-			font-size: 24px		
+			font-size: 24px
 
 	.page-catalog
 		margin: 0 0 60px
-		
-				
+
+	.banner-v2
+		font-size: 18px
+		.banner-title
+			max-width: none
+
+	.banner-v3
+		.list-checked
+			flex-direction: column
+			align-items: flex-start
+			width: 100%
+			li
+				width: 100%
+				margin: 0
+
+	.tab-content-product
+		line-height: 1.4
+
+	.page-product
+		margin: 0 0 60px
+
+	.product-characteristic-list li
+		padding: 8px 10px	
+
+	.video-instruction::before
+		width: 70px 
+		height: 50px
+
+	.additionali-list li
+		width: 33.33%		
+
+	.similar-products h2
+		font-size: 24px					
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -963,6 +1072,9 @@
 		padding: 0
 		width: 100%
 
+	.modal-body-product__gallery-item
+		height: 250px
+
 @media only screen and (max-width: 420px)
 	.you-clients-image
 		max-width: 320px
@@ -1001,6 +1113,13 @@
 	.work-slider-column
 		width: calc(50% - 10px)
 
+	.nav-tabs-product 
+		.nav-item	
+			width: 50%
+
+	.additionali-list li
+		width: 50%
+
 @media only screen and (max-width: 370px)
 	.logo
 		max-width: 80px
@@ -1013,7 +1132,7 @@
 			font-size: 10px
 			padding: 6px 8px
 
-	.nav-tabs
+	.category .nav-tabs
 		align-items: stretch
 		.nav-link
 			height: 100%
@@ -1022,8 +1141,8 @@
 			width: calc(50% - 5px)
 			max-width: none
 
-	.nav-tabs-catalog 
-		.nav-link		
+	.nav-tabs-catalog
+		.nav-link
 			width: 18px
 			height: 14px
 			padding: 0
@@ -1032,11 +1151,11 @@
 		padding: 8px 15px
 		font-size: 12px
 
-	.list-category-products 
+	.list-category-products
 		li
 			width: 50%
 
-	.pagination 
+	.pagination
 		.page-link
 			width: 30px
 			height: 30px
@@ -1044,11 +1163,11 @@
 			padding: 10px
 
 	.mb-120
-		margin-bottom: 50px		
+		margin-bottom: 50px
 
 	.manager-wrapper
 		&__photo
-			max-width: 200px	
+			max-width: 200px
 		&__name
 			font-size: 14px
 			padding: 10px
@@ -1056,3 +1175,25 @@
 			left: -20px
 			.name
 				font-size: 16px
+
+	.modal-body-product__gallery-preview .item
+		width: 33.33%
+
+	.modal-body-product__footer
+		.price-wrapper
+			width: 100%
+			margin: 0 0 15px
+		.btn
+			margin: 0 auto
+
+	.manager-callback
+		padding: 24px 20px
+		&__img
+			right: 0
+			max-width: 80px
+		.h3
+			font-size: 16px
+			max-width: 157px
+
+	.modal-body-product__info .link
+		margin: 30px auto 0

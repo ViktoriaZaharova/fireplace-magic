@@ -273,6 +273,17 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-white {
+  background: #fff;
+  border: solid 1px #e3e3e3;
+  color: #010101;
+}
+.btn-white:hover {
+  background: #f18231;
+  color: #fff;
+  bordr-color: #f18231;
+}
+
 .btn-group {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -336,8 +347,16 @@ ul, ol {
   margin-bottom: 37px;
 }
 
+.mb-35 {
+  margin-bottom: 35px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-120 {
@@ -358,6 +377,10 @@ ul, ol {
 
 .color-accent {
   color: #f18231;
+}
+
+a.color-accent:hover {
+  color: #464646;
 }
 
 .font-italic {

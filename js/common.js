@@ -43,7 +43,7 @@ $('.work-slider1').slick({
 	vertical: true,
 	verticalSwiping: true,
 	centerMode: true,
-	prevArrow:  '<button type="button" class="slick-prev"></button>',
+	prevArrow: '<button type="button" class="slick-prev"></button>',
 	nextArrow: '<button type="button" class="slick-next"></button>'
 });
 
@@ -86,6 +86,32 @@ $('.portfolio-gallery-presentation').slick({
 	asNavFor: '.portfolio-gallery-preview',
 });
 
+$('.similar-slider').slick({
+	slidesToShow: 4,
+	infinite: true,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
 
 // sliders end
 
@@ -163,7 +189,39 @@ $('.link-toggle-all').on('click', function (e) {
 		content.slice(5).slideUp();
 	}
 });
+
+$('.link-all-characteristics').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $(this).parents('.page-product').find('.list-characteristics-product li');
+
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.html('Скрыть');
+
+		content.css('display', 'flex');
+	} else {
+		$this.removeClass('trigger');
+		$this.html('показать все');
+
+		content.slice(7).css('display', 'none');
+	}
+});
 // show list all
+
+// load more
+$('.link-load-portfolio').on('click', function (e) {
+	e.preventDefault();
+	$(this).parents('.row').find('.work-item-col:hidden').slice(0, 4).slideDown();
+
+	var onBlock = $(this).parents('.row').find('.work-item-col:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
 
 // sidebar
 $('.btn-filter').click(function () {
@@ -172,4 +230,15 @@ $('.btn-filter').click(function () {
 
 $('.sidebar-close').click(function () {
 	$('.sidebar').fadeOut();
+});
+
+$(".js-tab-trigger").click(function () {
+	var id = $(this).attr('data-tab'),
+		content = $('.js-tab-content[data-tab="' + id + '"]');
+
+	$('.js-tab-trigger.active').removeClass('active'); // 1
+	$(this).addClass('active'); // 2
+
+	$('.js-tab-content.active').removeClass('active'); // 3
+	content.addClass('active'); // 4
 });
