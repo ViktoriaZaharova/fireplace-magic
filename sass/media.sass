@@ -108,7 +108,7 @@
 			display: none
 
 	.header.fixed .dropdown-submenu
-		display: none		
+		display: none
 
 	.wrapper
 		padding: 61px 0 0
@@ -248,7 +248,7 @@
 		margin: 0 0 25px
 
 	.advantages-box
-		margin: 30px 0 0	
+		margin: 30px 0 0
 
 	.projects
 		.btn
@@ -258,19 +258,19 @@
 		max-width: 300px
 
 	.licenses .warranty-document
-		margin: 20px auto 20px		
+		margin: 20px auto 20px
 
-	.question 
+	.question
 		padding: 60px 0
 		h2
 			margin: 0 0 30px
-		.callback-box	
+		.callback-box
 			max-width: none
 
 	.question-box
 		margin: 0 0 30px
 
-	.team 
+	.team
 		padding: 60px 0
 		.subtitle
 			margin: 30px auto
@@ -280,29 +280,29 @@
 			text-align: center
 
 	.team-box.js-tab-trigger
-		width: 50%	
-		
+		width: 50%
+
 	.sales
 		padding: 30px 0
 		.form-download
 			max-width: none
 			width: 100%
 		.list-social
-			margin: 20px auto 0	
+			margin: 20px auto 0
 
 	.sales-title
 		max-width: none
 		width: 100%
 		margin: 0 auto 20px
-		text-align: center	
-		
+		text-align: center
+
 	.footer-box
 		margin: 0 0 30px
 		&__title
 			margin: 0 0 20px
 			font-size: 16px
 
-	.footer-menu 
+	.footer-menu
 		li
 			margin: 0 0 10px
 
@@ -311,9 +311,9 @@
 		margin: 20px 0
 
 	.link
-		margin: 0 0 30px	
+		margin: 0 0 30px
 
-	.header 
+	.header
 		.header-bottom
 			display: none
 		.nav-menu
@@ -325,12 +325,54 @@
 			position: relative !important
 			transform: none !important
 
-	.portfolio-content 
+	.portfolio-content
 		.btn
 			margin: 20px auto 0
-			
+
 	.portfolio-gallery
-		margin: 30px 0 0																			
+		margin: 30px 0 0
+
+	.sidebar
+		display: none
+		position: fixed
+		left: 0
+		top: 0
+		z-index: 7
+		max-width: 280px
+		width: 100%
+		height: 100%
+		padding: 30px
+		overflow-y: auto
+		background: #fff
+
+	.sidebar-close
+		display: block
+
+	.checkbox-result-value
+		top: 100%
+		left: 0
+		margin: 10px 0 0
+		transform: none
+		&::before
+			border: none
+			border-bottom: 10px solid #fff
+			border-left: 8px solid transparent
+			border-right: 8px solid transparent
+			transform: none
+			top: -10px
+			left: 10px
+
+	.banner-v1
+		display: none
+
+	.btn-filter
+		display: flex
+
+	.filter-wrapper
+		justify-content: flex-start
+
+	.nav-tabs-catalog
+		margin: 0 20px 0 auto			
 
 @media only screen and (max-width: 890px)
 	.warranty
@@ -363,7 +405,32 @@
 		margin: 20px auto 0
 
 	.licenses
-		padding: 60px 0		
+		padding: 60px 0
+
+	.manager-wrapper
+		padding: 30px 30px 0
+		&__photo
+			max-width: 250px
+			position: relative
+			left: 0
+			margin: 20px auto 0
+		&__body
+			order: -1
+			max-width: none
+			margin: 0 0 30px
+		&__characteristics
+			width: 100%
+			max-width: none
+			text-align: center
+			margin: 0 auto 20px
+		.box-text
+			font-size: 16px
+			margin: 20px 0	
+		&__name
+			top: 205px
+		.h3
+			text-align: center	
+
 
 @media only screen and (max-width: 768px)
 	.header-top
@@ -390,7 +457,6 @@
 
 	.about
 		padding: 160px 0 150px
-		
 
 	.about-box
 		span
@@ -428,13 +494,13 @@
 		.subtitle
 			margin: 20px auto
 
-	.quote 
+	.quote
 		padding: 30px
-		.box-text		
+		.box-text
 			font-size: 16px
 
-	.advantages 
-		h2		
+	.advantages
+		h2
 			margin: 0 auto 30px
 
 	.team-box
@@ -445,14 +511,12 @@
 			margin: 0 20px 0 0
 			&::before
 				width: 120px
-				height: 120px	
+				height: 120px
 
-	
 	.clients-logos
 		.slick-track
 			display: flex
 			align-items: center
-
 
 	.licenses-bg, .warranty-bg, .home-bg
 		display: none
@@ -468,6 +532,60 @@
 	.warranty
 		background: url('../img/bg4.jpg') no-repeat center
 		background-size: cover
+
+	.list-category-products li
+		width: 20%
+
+	.page h1
+		font-size: 30px
+		margin: 0 0 30px		
+
+	.nav-tabs-catalog .nav-link
+		max-width: none
+
+	.list-tags 
+		font-size: 12px
+		li 
+			a	
+				padding: 8px 10px
+		.list-tags-btn 
+			a
+				height: 28px
+				font-size: 10px	
+
+	.list-category-products
+		margin: 0 0 20px			
+
+	.filter-wrapper
+		margin: 0 0 15px
+
+	.product-card-catalog-row 
+		flex-wrap: wrap
+		padding: 10px
+		.list-characteristics	
+			width: 100%
+			margin: 10px 0
+		.price-wrapper
+			width: fit-content
+		.btn-details
+			margin: 0 0 0 auto
+			display: flex		
+		.product-card-catalog__title
+			width: calc(100% - 80px)
+			padding: 0 0 0 20px
+		.btn
+			height: 40px	
+		&:hover
+			.price-wrapper
+				display: block	
+
+	.page-catalog
+		margin: 0 0 100px
+
+	.manager-wrapper
+		margin: 60px 0 0
+
+
 
 @media only screen and (max-width: 730px)
 	.you-clients
@@ -521,7 +639,7 @@
 			margin: 10px auto 0
 
 	.sales .form-download label
-		margin: 0 16px 0 0		
+		margin: 0 16px 0 0
 
 @media only screen and (max-width: 576px)
 	h1
@@ -541,7 +659,6 @@
 
 	.about
 		padding: 100px 0 160px
-		
 
 	.btn-video
 		font-size: 13px
@@ -621,9 +738,9 @@
 	.advantages-box
 		max-width: none
 		br
-			display: none	
+			display: none
 
-	.licenses 
+	.licenses
 		.warranty-document__icon
 			min-width: 50px
 			width: 50px
@@ -635,11 +752,11 @@
 				transform: translate(-50%,0)
 		.warranty-document__text
 			max-width: 220px
-			
+
 	.link-instruction
 		text-align: left
 
-	.question .callback-box 
+	.question .callback-box
 		padding: 30px
 		.subtitle
 			margin: 20px auto
@@ -660,8 +777,8 @@
 		text-align: center
 		.team-box__photo
 			margin: 0 auto 10px
-		
-	.team-box.js-tab-content 
+
+	.team-box.js-tab-content
 		font-size: 16px
 		.team-box__photo
 			width: 280px
@@ -670,7 +787,7 @@
 			margin: 0 auto 20px
 			&::before
 				width: 280px
-				height: 280px	
+				height: 280px
 
 	.contacts-wrapper
 		padding: 30px
@@ -679,13 +796,13 @@
 		margin: 30px auto
 		&:after
 			display: none
-		
+
 	.map
 		position: relative
 		height: 300px
 
 	.contacts
-		padding: 0	
+		padding: 0
 
 	.route-box
 		align-items: flex-start
@@ -694,17 +811,17 @@
 
 	.schedule
 		width: 100%
-		margin: 10px 0 0	
+		margin: 10px 0 0
 
-	.sales 
-		.form-download 
+	.sales
+		.form-download
 			flex-wrap: wrap
-			label	
+			label
 				width: 100%
 				margin: 0 0 16px
-				max-width: none	
+				max-width: none
 			button
-				width: 100%	
+				width: 100%
 
 	.footer-top, .footer-bottom
 		padding: 20px 0
@@ -716,13 +833,13 @@
 	.description-company
 		font-size: 12px
 		line-height: 1.2
-		margin: 10px 0 		
+		margin: 10px 0
 
 	.footer-box
 		margin: 0 0 20px
 
 	.link
-		margin: 0 0 20px	
+		margin: 0 0 20px
 
 	.modal-dialog
 		margin: 20px auto
@@ -733,8 +850,8 @@
 
 	.modal-header .subtitle
 		font-size: 16px
-		margin: 20px 0 0		
-		
+		margin: 20px 0 0
+
 	.portfolio-gallery-presentation__item
 		height: auto
 
@@ -747,7 +864,7 @@
 
 	.portfolio-gallery-presentation
 		width: calc(100% - 80px)
-		padding: 0 0 0 20px			
+		padding: 0 0 0 20px
 
 	.page-portfolio
 		margin: 0 0 70px
@@ -756,7 +873,27 @@
 		margin: 0 0 40px
 
 	.page-portfolio h1
-		margin: 0 0 30px						
+		margin: 0 0 30px
+
+	.list-category-products 
+		li
+			width: 33.33%
+
+	.nav-tabs-catalog .nav-link
+		max-width: none			
+
+	.mb-120
+		margin-bottom: 70px
+
+	.seo-section
+		margin: 0 0 40px
+		.h3
+			font-size: 24px		
+
+	.page-catalog
+		margin: 0 0 60px
+		
+				
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -791,25 +928,25 @@
 	.mb-37
 		margin-bottom: 20px
 
-	.licenses 
+	.licenses
 		.btn
-			width: 100%	
+			width: 100%
 
 	.warranty
 		&-bg
-			height: calc(100% + 800px)	
+			height: calc(100% + 800px)
 
 	.portfolio-gallery-preview
-		max-width: 100%	
+		max-width: 100%
 		order: 1
 		padding: 0 20px
 		margin: 20px 0 0
 		.slick-arrow
 			top: 50%
-			transform: translate(0,-50%)	
+			transform: translate(0,-50%)
 			padding: 10px
 			height: 16px
-			
+
 		.slick-prev
 			left: 0
 			background: url('../img/angle-left.svg') no-repeat center
@@ -823,8 +960,8 @@
 			height: 80px
 
 	.portfolio-gallery-presentation
-		padding: 0 
-		width: 100%						
+		padding: 0
+		width: 100%
 
 @media only screen and (max-width: 420px)
 	.you-clients-image
@@ -880,8 +1017,42 @@
 		align-items: stretch
 		.nav-link
 			height: 100%
-			// max-width: none	
 			margin: 0 0 10px
 			padding: 10px
 			width: calc(50% - 5px)
 			max-width: none
+
+	.nav-tabs-catalog 
+		.nav-link		
+			width: 18px
+			height: 14px
+			padding: 0
+
+	.btn-filter
+		padding: 8px 15px
+		font-size: 12px
+
+	.list-category-products 
+		li
+			width: 50%
+
+	.pagination 
+		.page-link
+			width: 30px
+			height: 30px
+			min-width: 30px
+			padding: 10px
+
+	.mb-120
+		margin-bottom: 50px		
+
+	.manager-wrapper
+		&__photo
+			max-width: 200px	
+		&__name
+			font-size: 14px
+			padding: 10px
+			top: 160px
+			left: -20px
+			.name
+				font-size: 16px

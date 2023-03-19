@@ -164,3 +164,12 @@ $('.link-toggle-all').on('click', function (e) {
 	}
 });
 // show list all
+
+// sidebar
+$('.btn-filter').click(function () {
+	$('.sidebar').fadeToggle();
+});
+
+$('.sidebar-close').click(function () {
+	$('.sidebar').fadeOut();
+});

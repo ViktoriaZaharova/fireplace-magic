@@ -262,6 +262,17 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-grey-opacity {
+  background: rgba(70, 70, 70, 0.6);
+  color: #fefefe;
+  font-size: 10px;
+  font-weight: 500;
+}
+.btn-grey-opacity:hover {
+  background: #f18231;
+  color: #fff;
+}
+
 .btn-group {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -298,12 +309,39 @@ ul, ol {
   list-style-type: disc;
 }
 
+.list-dots-my li {
+  position: relative;
+  padding: 0 0 0 18px;
+  margin: 0 0 20px;
+}
+.list-dots-my li:last-child {
+  margin: 0;
+}
+.list-dots-my li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f18231;
+  left: 0;
+  top: 8px;
+  position: absolute;
+}
+
+.m-10 {
+  margin: 10px 0;
+}
+
 .mb-37 {
   margin-bottom: 37px;
 }
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
 }
 
 .container {

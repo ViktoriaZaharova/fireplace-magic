@@ -374,6 +374,55 @@
   .portfolio-gallery {
     margin: 30px 0 0;
   }
+  .sidebar {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 7;
+    max-width: 280px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    overflow-y: auto;
+    background: #fff;
+  }
+  .sidebar-close {
+    display: block;
+  }
+  .checkbox-result-value {
+    top: 100%;
+    left: 0;
+    margin: 10px 0 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .checkbox-result-value::before {
+    border: none;
+    border-bottom: 10px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    -webkit-transform: none;
+            transform: none;
+    top: -10px;
+    left: 10px;
+  }
+  .banner-v1 {
+    display: none;
+  }
+  .btn-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .filter-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nav-tabs-catalog {
+    margin: 0 20px 0 auto;
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -410,6 +459,38 @@
   }
   .licenses {
     padding: 60px 0;
+  }
+  .manager-wrapper {
+    padding: 30px 30px 0;
+  }
+  .manager-wrapper__photo {
+    max-width: 250px;
+    position: relative;
+    left: 0;
+    margin: 20px auto 0;
+  }
+  .manager-wrapper__body {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    max-width: none;
+    margin: 0 0 30px;
+  }
+  .manager-wrapper__characteristics {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  .manager-wrapper .box-text {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .manager-wrapper__name {
+    top: 205px;
+  }
+  .manager-wrapper .h3 {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -523,6 +604,68 @@
   .warranty {
     background: url("../img/bg4.jpg") no-repeat center;
     background-size: cover;
+  }
+  .list-category-products li {
+    width: 20%;
+  }
+  .page h1 {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+  .nav-tabs-catalog .nav-link {
+    max-width: none;
+  }
+  .list-tags {
+    font-size: 12px;
+  }
+  .list-tags li a {
+    padding: 8px 10px;
+  }
+  .list-tags .list-tags-btn a {
+    height: 28px;
+    font-size: 10px;
+  }
+  .list-category-products {
+    margin: 0 0 20px;
+  }
+  .filter-wrapper {
+    margin: 0 0 15px;
+  }
+  .product-card-catalog-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px;
+  }
+  .product-card-catalog-row .list-characteristics {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .product-card-catalog-row .price-wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .product-card-catalog-row .btn-details {
+    margin: 0 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .product-card-catalog-row .product-card-catalog__title {
+    width: calc(100% - 80px);
+    padding: 0 0 0 20px;
+  }
+  .product-card-catalog-row .btn {
+    height: 40px;
+  }
+  .product-card-catalog-row:hover .price-wrapper {
+    display: block;
+  }
+  .page-catalog {
+    margin: 0 0 100px;
+  }
+  .manager-wrapper {
+    margin: 60px 0 0;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -861,6 +1004,24 @@
   .page-portfolio h1 {
     margin: 0 0 30px;
   }
+  .list-category-products li {
+    width: 33.33%;
+  }
+  .nav-tabs-catalog .nav-link {
+    max-width: none;
+  }
+  .mb-120 {
+    margin-bottom: 70px;
+  }
+  .seo-section {
+    margin: 0 0 40px;
+  }
+  .seo-section .h3 {
+    font-size: 24px;
+  }
+  .page-catalog {
+    margin: 0 0 60px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -996,5 +1157,38 @@
     padding: 10px;
     width: calc(50% - 5px);
     max-width: none;
+  }
+  .nav-tabs-catalog .nav-link {
+    width: 18px;
+    height: 14px;
+    padding: 0;
+  }
+  .btn-filter {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  .list-category-products li {
+    width: 50%;
+  }
+  .pagination .page-link {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    padding: 10px;
+  }
+  .mb-120 {
+    margin-bottom: 50px;
+  }
+  .manager-wrapper__photo {
+    max-width: 200px;
+  }
+  .manager-wrapper__name {
+    font-size: 14px;
+    padding: 10px;
+    top: 160px;
+    left: -20px;
+  }
+  .manager-wrapper__name .name {
+    font-size: 16px;
   }
 }

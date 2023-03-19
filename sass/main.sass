@@ -1162,6 +1162,7 @@
 	margin: 0 auto
 	font-size: 12px
 	font-weight: 500
+	padding: 0
 // page portfolio end	
 
 // catalog page	
@@ -1171,6 +1172,27 @@
 .sidebar
 	width: 100%
 	border-top: 1px solid rgba(#f5f4f0, .5)
+
+.sidebar-close
+	width: 20px
+	height: 20px
+	position: absolute
+	right: 20px
+	top: 20px
+	display: none
+	&::before, &:after
+		content: ''
+		position: absolute
+		left: 10px
+		top: 0
+		width: 2px
+		border-radius: 2px
+		height: 100%
+		background: $accent
+	&:before
+		transform: rotate(45deg)
+	&:after
+		transform: rotate(135deg)
 
 .sidebar-box
 	width: 100%
@@ -1421,4 +1443,331 @@
 				background: $accent
 				color: #fff
 
+.product-card-catalog
+	position: relative
+	width: 100%
+	height: 350px
+	border-radius: 6px
+	border: solid 1px #f5f4f0
+	text-align: center
+	font-size: 16px
+	&__wrapper
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		left: 0
+		top: 0
+		background: #fff
+		border-radius: 6px
+		transition: .3s ease
+		padding: 15px 25px 26px
+	&__img
+		position: relative
+		max-width: 200px
+		height: 200px
+		width: 100%
+		@include d-flex
+		margin: 0 auto
+		img
+			max-height: 100%
+		.btn
+			position: absolute
+			z-index: 1
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			width: 100%
+			padding: 10px
+			max-width: 151px
+			display: none
+	&__body
+		width: 100%
+		margin: 19px 0 0
+	&__title
+		width: 100%
+		color: #000
+		margin: 0 auto 12px
+		line-height: 1.10
+		position: relative
+		max-height: 51px
+		min-height: 51px
+		overflow: hidden
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 20px
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+		&:hover
+			color: $accent
+	&__hidden
+		margin: 29px 0 0
+		width: 100%
+		display: none
+		.btn
+			width: 100%
+			max-width: 211px
+			margin: 30px auto 0
+			font-size: 12px
+			font-weight: 500
+			height: 50px
+	&:hover
+		z-index: 2
+		border-color: transparent
+		.product-card-catalog__wrapper
+			box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		.product-card-catalog__hidden
+			display: block
+		.product-card-catalog__img
+			.btn
+				display: flex
+
+.price-wrapper
+	width: 100%
+
+.price
+	font-size: 20px
+	font-weight: 500
+
+.list-characteristics
+	color: #606060
+	font-size: 12px
+	font-weight: 300
+	li
+		position: relative
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+		p, span
+			background: #fff
+			z-index: 1
+		p
+			padding: 0 3px 0 0
+		span
+			padding: 0 0 0 3px
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 3px
+			width: 100%
+			height: 1px
+			border-bottom: 1px dotted #606060
+
+.banner-v2
+	margin: 0
+	height: 100%
+	padding: 10px
+	color: #fff
+	font-size: 20px
+	.banner-title
+		font-style: normal
+		text-align: left
+		margin: 0 0 12px
+		font-size: 20px
+		font-weight: bold
+		max-width: 190px
+		line-height: 1.3
+	.banner-content
+		margin: 0
+		width: 100%
+		height: 100%
+		max-width: none
+		padding: 19px 20px 17px
+		border-radius: 6px
+		box-shadow: 0 0 32px 0 rgba(91, 36, 36, 0.08)
+		border: solid 1px rgba(#fff, .4)
+		background: rgba(#000, .4)
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	.btn
+		margin: auto 0 0
+	.list-checked
+		width: 100%
+		li
+			width: 100%
+			display: flex
+			align-items: center
+			margin: 0 0 8px
+			&:last-child
+				margin: 0
+
+.product-card-catalog-row
+	height: auto
+	display: flex
+	align-items: center
+	padding: 10px 20px 10px 10px
+	background: #fff
+	transition: .3s ease
+	border: solid 1px #f5f4f0
+	margin: 0 0 -1px
+	border-radius: 0
+	&:last-child
+		margin: 0
+		border-radius: 0 0 6px 6px
+	&:first-child
+		border-radius: 6px 6px 0 0
+	.product-card-catalog__img
+		width: 80px
+		max-width: none
+		height: 80px
+		margin: 0
+	.product-card-catalog__title
+		width: 235px
+		margin: 0
+		padding: 0 0 0 30px
+		text-align: left
+		min-height: auto
+		max-height: 33px
+		&::before
+			display: none
+	.list-characteristics
+		width: 200px
+		margin: 0 auto
+	.price-wrapper
+		width: 125px
+	.btn-details
+		font-size: 12px
+		font-weight: 500
+		padding: 10px 20px
+		height: 50px
+		display: none
+		width: 125px
+	&:hover
+		box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+
+		.btn-details
+			display: flex
+		.price-wrapper
+			display: none
+
+.banner-v3
+	margin: 10px 0
+	width: 100%
+	height: auto
+	.banner-content
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		flex-direction: row
+		padding: 15px
+		.btn
+			max-width: 120px
+			padding: 0 20px
+	.banner-title
+		margin: 0
+		max-width: 190px
+	.list-checked
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		width: fit-content
+		margin: 0 auto
+		font-size: 16px
+		li
+			width: fit-content
+			margin: 0 28px 0 0
+			&:last-child
+				margin: 0
+
+.seo-section
+	margin: 0 0 50px
+	.h3
+		font-size: 30px
+		margin: 0 0 30px
+		font-family: $default-font
+	.box-text
+		line-height: 1.5
+		p
+			margin: 0 0 30px
+			&:last-child
+				margin: 0
+		ul
+			margin: 30px 0 0
+	&__img
+		margin: 40px 0 0
+		width: 100%
+		img
+			width: 100%
+			border-radius: 6px
+
+.manager-wrapper
+	position: relative
+	width: 100%
+	z-index: 1
+	background: #fff
+	margin: 127px 0 0
+	border-radius: 6px
+	box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+	padding: 49px 54px 54px 43px
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	flex-wrap: wrap
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% - 30px)
+		height: calc(100% - 30px)
+		z-index: -1
+		border: solid 1px #ece4d4
+		border-radius: 6px
+	&__characteristics
+		font-family: $title-font
+		font-style: italic
+		font-size: 16px
+		font-weight: bold
+		max-width: 185px
+	&__body
+		max-width: 310px
+		margin: 0 0 0 auto
+	&__photo
+		position: absolute
+		bottom: 15px
+		left: 130px
+	&__name
+		position: absolute
+		padding: 12.5px 17px
+		text-align: center
+		line-height: 1.25
+		left: -45px
+		top: 280px
+		background: #fff
+		border-radius: 6px
+		box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		&::before
+			content: ''
+			position: absolute
+			border-radius: 50%
+			left: 50%
+			top: -7px
+			transform: translate(-50%,0)
+			background: #fff
+			width: 15px
+			height: 15px
+			box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+		.name
+			font-family: $title-font
+			font-size: 20px
+			font-style: italic
+			font-weight: bold
+	.box-text
+		margin: 29px 0
+		line-height: 1.3
+		font-size: 20px
+
+.btn-filter
+	font-size: 12px
+	padding: 10px 30px
+	display: none	
 // catalog page end	
