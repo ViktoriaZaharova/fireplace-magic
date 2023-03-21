@@ -1700,6 +1700,11 @@
 .page-catalog {
   margin: 0 0 160px;
 }
+.page-catalog .banner-v1 {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 70px;
+}
 
 .sidebar {
   width: 100%;
@@ -2071,24 +2076,22 @@
   font-size: 14px;
   margin: 0 0 27px;
 }
-.list-tags li {
-  margin: 0 8px 9px 0;
-}
-.list-tags li a {
+.list-tags a {
   border-radius: 6px;
   background-color: #f9f2e3;
   padding: 11px 16px;
   color: #000;
+  margin: 0 8px 9px 0;
 }
-.list-tags li a:hover {
+.list-tags a:hover {
   color: #000;
 }
-.list-tags .list-tags-btn a {
+.list-tags .btn-toggle-tags {
   background: #fff;
   color: #f18231;
   font-weight: 500;
 }
-.list-tags .list-tags-btn a:hover {
+.list-tags .btn-toggle-tags:hover {
   background: #f18231;
   color: #fff;
 }

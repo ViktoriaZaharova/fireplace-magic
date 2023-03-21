@@ -1168,6 +1168,10 @@
 // catalog page	
 .page-catalog
 	margin: 0 0 160px
+	.banner-v1
+		position: sticky
+		position: -webkit-sticky
+		top: 70px
 
 .sidebar
 	width: 100%
@@ -1424,24 +1428,22 @@
 	flex-wrap: wrap
 	font-size: 14px
 	margin: 0 0 27px
-	li
-		margin: 0 8px 9px 0
-		a
-			border-radius: 6px
+	a
+		border-radius: 6px
 			// box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.17)
-			background-color: #f9f2e3
-			padding: 11px 16px
+		background-color: #f9f2e3
+		padding: 11px 16px
+		color: #000
+		margin: 0 8px 9px 0
+		&:hover
 			color: #000
-			&:hover
-				color: #000
-	.list-tags-btn
-		a
-			background: #fff
-			color: $accent
-			font-weight: 500
-			&:hover
-				background: $accent
-				color: #fff
+	.btn-toggle-tags
+		background: #fff
+		color: $accent
+		font-weight: 500
+		&:hover
+			background: $accent
+			color: #fff
 
 .product-card-catalog
 	position: relative
@@ -1952,7 +1954,7 @@
 		line-height: normal
 	.work-item
 		margin: 0
-		height: 350px	
+		height: 350px
 
 .product-characteristic
 	width: 100%
@@ -2002,7 +2004,7 @@
 		padding: 3px 8px
 		background: #f9f2e3
 		border-radius: 0.5px
-		width: fit-content	
+		width: fit-content
 	ul
 		margin: 28px 0 0
 
@@ -2033,7 +2035,7 @@
 
 .link-load-portfolio
 	text-transform: uppercase
-	margin: 0 auto		
+	margin: 0 auto
 	font-size: 12px
 	font-weight: 500
 
@@ -2055,5 +2057,5 @@
 		&:hover
 			box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
 			position: relative
-			z-index: 1		
+			z-index: 1
 // product page end

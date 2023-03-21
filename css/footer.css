@@ -272,16 +272,6 @@ footer {
   width: 100%;
   max-width: 480px;
 }
-.modal-body-product__gallery::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  background: url("../img/zoom-in.svg") no-repeat center;
-  background-size: cover;
-}
 .modal-body-product__gallery-max {
   width: 100%;
   margin: 0 0 24px;
@@ -371,6 +361,16 @@ footer {
 }
 .video-box-trigger:hover::before {
   background: url("../img/youtube-2.svg") no-repeat center;
+  background-size: cover;
+}
+
+.btn-gallery-zoom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: url("../img/zoom-in.svg") no-repeat center;
   background-size: cover;
 }
 

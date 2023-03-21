@@ -210,6 +210,26 @@ $('.link-all-characteristics').on('click', function (e) {
 		content.slice(7).css('display', 'none');
 	}
 });
+
+$('.btn-toggle-tags').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $(this).parents('.list-tags').find('.list-tags__links');
+
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.html('показать все');
+		content.slice(10).css('display', 'none');
+		
+	} else {
+		$this.removeClass('trigger');
+		$this.html('Скрыть');
+		content.css('display', 'flex');
+	}
+});
 // show list all
 
 // load more
@@ -242,3 +262,6 @@ $(".js-tab-trigger").click(function () {
 	$('.js-tab-content.active').removeClass('active'); // 3
 	content.addClass('active'); // 4
 });
+
+
+
