@@ -2059,3 +2059,113 @@
 			position: relative
 			z-index: 1
 // product page end
+
+// page requisites
+.page-requisites
+	margin: 0 0 140px
+
+.list-requisites
+	width: 100%
+	li
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		margin: 0 0 2px
+		padding: 15px
+		background: rgba(#f7f7f7, .5)
+		&:last-child
+			margin: 0
+	&__title
+		width: 35%
+	&__text
+		width: 65%
+
+// page requisites end
+
+// page-faq	
+.page-faq
+	margin: 0 0 150px
+
+.nav-tabs-faq
+	width: 100%
+	max-width: none
+	flex-direction: row
+	.nav-item
+		margin: 0 20px 30px 0
+		&:last-child
+			margin: 0 0 30px
+	.nav-link
+		padding: 16px 35px
+		border-radius: 6px
+		min-height: auto
+		background: #f7f7f7
+		color: #000
+		border: 1px solid transparent
+		&.active
+			border: solid 1px #f18231
+			background: #fff
+			color: #f18231
+
+.tab-content-faq
+	width: 100%
+
+.banner-faq
+	max-width: 290px
+	width: 100%
+	margin: 0 0 0 auto
+	position: relative
+	z-index: 1
+	padding: 45px
+	box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08)
+	background: #fff
+	border-radius: 6px
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% - 30px)
+		height: calc(100% - 30px)
+		border: solid 1px #ece4d4
+		border-radius: 6px
+		z-index: -1
+	.h4
+		font-size: 20px
+		font-weight: bold
+		font-family: $title-font
+	.subtitle
+		margin: 20px 0
+		font-size: 16px
+
+.accordion-faq
+	.accordion-item
+		margin: 0 0 20px
+		width: 100%
+		border: none
+		border-radius: 0
+	.accordion-body
+		padding: 15px 0 0 56px
+		line-height: 1.5
+		font-size: 16px
+	.accordion-button
+		font-size: 20px
+		color: $accent
+		&.collapsed
+			color: #000
+			&:after
+				background: #f9f2e3 url('../img/angle-down.svg') no-repeat center
+				background-size: 16px
+
+		&:after
+			order: -1
+			margin: 0 20px 0 0
+			width: 36px
+			height: 36px
+			@include d-flex
+			background: $accent url('../img/angle-down-white.svg') no-repeat center
+			background-size: 16px
+			border-radius: 50%
+			border: none
+
+// page-faq end	

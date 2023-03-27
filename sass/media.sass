@@ -69,6 +69,15 @@
 		&__img
 			max-width: 450px
 
+	.nav-tabs-faq 
+		.nav-item
+			margin: 0 10px 20px 0
+			&:last-child
+				margin: 0 0 20px
+		.nav-link
+			padding: 10px 25px
+			
+
 @media only screen and (max-width: 992px)
 	.header-bottom
 		display: none
@@ -527,13 +536,13 @@
 		h2
 			margin: 0 auto 30px
 
-	.nav-tabs
-		display: flex
-		align-items: flex-start
-		justify-content: space-between
-		max-width: none
-		.nav-link
-			max-width: calc(33.33% - 10px)
+		.nav-tabs
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+			max-width: none
+			.nav-link
+				max-width: calc(33.33% - 10px)
 
 	.download-portfolio
 		.subtitle
@@ -664,6 +673,24 @@
 
 	.viewed-products
 		margin: 0 0 60px	
+
+	.page-requisites, .page-faq
+		margin: 0 0 60px	
+
+	.banner-faq
+		max-width: none
+		margin: 30px 0 0
+
+	.accordion-faq 
+		.accordion-button	
+			font-size: 16px
+			&:after
+				margin: 0 10px 0 0
+				width: 30px
+				height: 30px
+				background-size: 12px
+		.accordion-body
+			padding: 10px 0 0 40px		
 
 @media only screen and (max-width: 730px)
 	.you-clients
@@ -1003,6 +1030,23 @@
 
 	.similar-products h2
 		font-size: 24px					
+
+	.list-requisites
+		&__text
+			width: 100%
+		&__title
+			width: 100%
+			margin: 0 0 5px	
+
+	.nav-tabs-faq 
+		font-size: 14px
+		.nav-link	
+			padding: 10px 15px
+			font-size: 12px
+		.nav-item
+			margin: 0 10px 10px 0
+			&:last-child
+				margin: 0 0 10px	
 
 @media only screen and (max-width: 480px)
 	.logo
