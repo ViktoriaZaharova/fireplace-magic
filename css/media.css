@@ -79,6 +79,15 @@
   .nav-tabs-faq .nav-link {
     padding: 10px 25px;
   }
+  .team-box-column .team-box__photo {
+    width: 350px;
+    min-width: 350px;
+    height: 380px;
+  }
+  .team-box-column .team-box__photo::before {
+    width: 350px;
+    height: 350px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .header-bottom {
@@ -486,6 +495,22 @@
   .callback-wrapper {
     margin: 70px 0 0;
   }
+  .page-team {
+    margin: 70px 0 40px;
+  }
+  .team-box-column {
+    font-size: 16px;
+    margin: 0 0 50px;
+  }
+  .team-box-column .team-box__photo {
+    width: 250px;
+    min-width: 250px;
+    height: 280px;
+  }
+  .team-box-column .team-box__photo::before {
+    width: 250px;
+    height: 250px;
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -821,6 +846,12 @@
   .callback-wrapper .subtitle {
     font-size: 16px;
     margin: 15px 0 20px;
+  }
+  .mission {
+    padding: 70px 0 40px;
+  }
+  .mission h2 {
+    margin: 0 0 30px;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -1260,6 +1291,26 @@
   }
   .tour {
     margin: 70px 0 0;
+  }
+  .team-box-column .team-box__photo {
+    width: 200px;
+    min-width: 200px;
+    height: 230px;
+  }
+  .team-box-column .team-box__photo::before {
+    width: 200px;
+    height: 200px;
+  }
+  .page-team-home .subtitle {
+    font-size: 20px;
+    margin: 20px auto 0;
+  }
+  .h2 {
+    font-size: 30px;
+  }
+  .mission-box {
+    font-size: 18px;
+    margin: 0 0 40px;
   }
 }
 @media only screen and (max-width: 480px) {
