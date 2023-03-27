@@ -465,6 +465,27 @@
   .tab-content-product .box-text p {
     margin: 0 0 20px;
   }
+  .page-contacts {
+    margin: 80px 0 0;
+  }
+  .contacts-item {
+    margin: 0 0 20px;
+  }
+  .contacts-item__body {
+    font-size: 16px;
+  }
+  .contacts-item__title {
+    font-size: 22px;
+    margin: 0 0 12px;
+  }
+  .contacts-map {
+    max-width: none;
+    margin: 30px 0 0;
+    height: 400px;
+  }
+  .callback-wrapper {
+    margin: 70px 0 0;
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -786,6 +807,20 @@
   }
   .accordion-faq .accordion-body {
     padding: 10px 0 0 40px;
+  }
+  .page-contacts-home {
+    padding: 120px 0;
+  }
+  .page-contacts {
+    margin: 70px 0 0;
+  }
+  .callback-wrapper {
+    margin: 50px 0 0;
+    padding: 30px;
+  }
+  .callback-wrapper .subtitle {
+    font-size: 16px;
+    margin: 15px 0 20px;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -1200,6 +1235,31 @@
   }
   .nav-tabs-faq .nav-item:last-child {
     margin: 0 0 10px;
+  }
+  .page-contacts-home {
+    padding: 70px 0;
+  }
+  .page-contacts-home h1 {
+    font-size: 40px;
+  }
+  .page-contacts {
+    margin: 50px 0 0;
+  }
+  .contacts-item__title {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .contacts-item__icon {
+    margin: 0 10px 0 0;
+  }
+  .contacts-item .list-social {
+    margin: 20px 0 0;
+  }
+  .callback-wrapper form .consent {
+    margin: 20px 0 0;
+  }
+  .tour {
+    margin: 70px 0 0;
   }
 }
 @media only screen and (max-width: 480px) {

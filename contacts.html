@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Магия каминов</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header-top">
+							<div class="dropdown dropdown-submenu">
+								<a href="#" class="dropdown-burger" data-bs-toggle="dropdown">
+									<span></span>
+									<span></span>
+									<span></span>
+								</a>
+								<div class="dropdown-menu">
+									<ul class="dropdown-menu-list my-ul">
+										<li><a href="#">информация</a></li>
+										<li><a href="#">услуги</a></li>
+										<li><a href="#">условия покупки</a>
+											<ul class="submenu my-ul">
+												<li><a href="#">Доставка</a></li>
+												<li><a href="#">оплата</a></li>
+												<li><a href="#">гарантии</a></li>
+												<li><a href="#">возврат товара</a></li>
+												<li><a href="#">акции</a></li>
+											</ul>
+										</li>
+										<li><a href="#">о компании</a></li>
+										<li><a href="#">каталог</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="btn-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+							<div class="header-box schedule-box">
+								<span class="header-box__icon"><img src="img/clock.svg" alt=""></span>
+								<span class="header-box__text">Пн-Пт с 10:00 до 18:00</span>
+							</div>
+							<a href="mailto:example.support@gmail.com" class="header-box mail-box">
+								<span class="header-box__icon"><img src="img/envelope.svg" alt=""></span>
+								<span class="header-box__text">example.support@gmail.com</span>
+							</a>
+							<a href="tel:+78122004350" class="header-box phone-box">
+								<span class="header-box__icon"><img src="img/phone.svg" alt=""></span>
+								<span class="header-box__text">8 (812) 200-43-50</span>
+							</a>
+
+							<a href="#" class="btn btn-sm btn-grey" data-bs-toggle="modal" data-bs-target="#modalCallback">обратный
+								звонок</a>
+						</div>
+						<div class="header-bottom">
+							<a href="#" class="mobile-menu__close"><img src="img/close.svg" alt=""></a>
+
+							<nav class="nav-menu">
+								<ul class="menu my-ul">
+									<li><a href="services.html">услуги</a></li>
+									<li><a href="catalog.html">каталог</a></li>
+									<li class="dropdown">
+										<a href="terms.html" class="dropdown-toggle" data-bs-toggle="dropdown">условия покупки</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Доставка</a>
+											<a href="#" class="dropdown-item">Оплата</a>
+											<a href="#" class="dropdown-item">Гарантии</a>
+											<a href="#" class="dropdown-item">Возврат товара</a>
+											<a href="#" class="dropdown-item">Акции</a>
+										</div>
+									</li>
+									<li><a href="information.html">информация</a></li>
+									<li><a href="index.html#about">о компании</a></li>
+									<li><a href="#contacts" class="go_to">Контакты</a></li>
+								</ul>
+							</nav>
+
+							<form method="post" class="form-search">
+								<label><input type="text" placeholder="Поиск" name="search" required></label>
+								<button type="submit"><img src="img/magnifying-glass.svg" alt=""></button>
+							</form>
+
+							<div class="header-box schedule-box">
+								<span class="header-box__icon"><img src="img/clock.svg" alt=""></span>
+								<span class="header-box__text">Пн-Пт с 10:00 до 18:00</span>
+							</div>
+							<a href="mailto:example.support@gmail.com" class="header-box mail-box">
+								<span class="header-box__icon"><img src="img/envelope.svg" alt=""></span>
+								<span class="header-box__text">example.support@gmail.com</span>
+							</a>
+							<a href="tel:+78122004350" class="header-box phone-box">
+								<span class="header-box__icon"><img src="img/phone.svg" alt=""></span>
+								<span class="header-box__text">8 (812) 200-43-50</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end-->
+
+		<div class="page-contacts-home">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1>Контакты</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page page-contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="contacts-item">
+							<div class="contacts-item__icon"><img src="img/location-contacts.png" alt=""></div>
+							<div class="contacts-item__body">
+								<div class="contacts-item__title">Адрес</div>
+								<p>Санкт-Петербург, <br>
+									Выборгское шоссе, 234, п. Парголово</p>
+							</div>
+						</div>
+
+						<div class="contacts-item">
+							<div class="contacts-item__icon"><img src="img/time.png" alt=""></div>
+							<div class="contacts-item__body">
+								<div class="contacts-item__title">График работы</div>
+								<p>Пн-Пт с 10:00 до 18:00</p>
+							</div>
+						</div>
+
+						<div class="contacts-item">
+							<div class="contacts-item__icon"><img src="img/telephone.png" alt=""></div>
+							<div class="contacts-item__body">
+								<div class="contacts-item__title">Телефон</div>
+								<a href="tel:+78122004583">+7 812 200-45-83</a>
+							</div>
+						</div>
+
+						<div class="contacts-item">
+							<div class="contacts-item__icon"><img src="img/email.png" alt=""></div>
+							<div class="contacts-item__body">
+								<div class="contacts-item__title">Email</div>
+								<a href="maito:hello1@magic-of-fireplace.ru">hello1@magic-of-fireplace.ru</a>
+								<ul class="list-social my-ul">
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-5">
+						<div class="contacts-map">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?ll=30.262975%2C60.081201&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMzQ3MDY1Nzc1EnTQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQv9C-0YHRkdC70L7QuiDQn9Cw0YDQs9C-0LvQvtCy0L4sINCS0YvQsdC-0YDQs9GB0LrQvtC1INGI0L7RgdGB0LUsIDIzNCIKDZMa8kEVJlNwQg%2C%2C&z=16.8"
+								frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="callback-wrapper">
+							<div class="h3"><span class="font-italic">Есть вопросы?</span> Напишите нам</div>
+							<div class="subtitle">Оставьте свои контактные данные и мы скоро свяжемся с вами</div>
+
+							<form method="post" class="form">
+								<div class="row">
+									<div class="col-12 col-md-4">
+										<label>
+											<input type="text" placeholder="Ваше имя" name="name">
+										</label>
+									</div>
+									<div class="col-12 col-md-4">
+										<label>
+											<input type="text" placeholder="Ваше имя" name="name">
+										</label>
+									</div>
+									<div class="col-12 col-md-4">
+										<label>
+											<input type="text" placeholder="Ваше имя" name="name">
+										</label>
+									</div>
+									<div class="col-12">
+										<label>
+											<textarea name="message" placeholder="Ваше сообщение"></textarea>
+										</label>
+									</div>
+								</div>
+
+								<div class="row align-items-center">
+									<div class="col-12 col-sm-6 col-md-4">
+										<button type="submit" class="btn btn-sm btn-accent">отправить заявку</button>
+									</div>
+									<div class="col-12 col-sm-6 col-md-6">
+										<div class="consent">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных
+											и соглашаетесь с Пользовательским соглашением</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<section class="tour">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>3D тур по нашему офису</h2>
+					</div>
+				</div>
+			</div>
+			<div class="tour-wrapper"><img src="img/3d.jpg" alt=""></div>
+		</section>
+
+
+		<!-- sales -->
+		<div class="sales">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-center">
+						<div class="sales-title"><span class="font-italic">Получите скидку 10%</span> на монтаж
+							оборудования за подписку</div>
+
+						<form method="post" class="form-download">
+							<label>
+								<input type="text" placeholder="Ваш email" name="mail">
+							</label>
+							<button type="submit" class="btn btn-sm btn-accent">Подписаться</button>
+						</form>
+
+						<ul class="list-social my-ul">
+							<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- sales end -->
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer-top">
+							<div class="row">
+								<div class="col-6 col-lg-4">
+									<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+									<div class="description-company">
+										<p>Тут будет небольшой текст о компании,
+											который будет написан в несколько
+											строк и расскажет кратко о каких-то
+											преимуществах или просто небольшое
+											описание.</p>
+									</div>
+
+									<a href="#" class="color-accent link">
+										<span class="link-text">больше о компании</span>
+										<span class="link-icon"><img src="img/right-arrow-accent.svg" alt=""></span>
+									</a>
+								</div>
+
+
+								<div class="col-6 col-lg-3">
+									<div class="footer-box">
+										<div class="footer-box__title">Услуги</div>
+										<ul class="footer-menu my-ul">
+											<li><a href="#">Монтаж каминов</a></li>
+											<li><a href="#">Монтаж печей</a></li>
+											<li><a href="#">Дымоходы</a></li>
+											<li><a href="#">Выезд инженера</a></li>
+											<li><a href="#">Изготовление на заказ</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="footer-box">
+										<div class="footer-box__title">Популярные категории</div>
+										<ul class="footer-menu my-ul">
+											<li><a href="#">Печи для бани</a></li>
+											<li><a href="#">Каминные топки</a></li>
+											<li><a href="#">Керамические дымоходы</a></li>
+											<li><a href="#">Печи-камины</a></li>
+											<li><a href="#">Дизайнерские камины</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-6 col-lg-2">
+									<div class="footer-box">
+										<div class="footer-box__title">Условия покупки</div>
+										<ul class="footer-menu my-ul">
+											<li><a href="#">Доставка</a></li>
+											<li><a href="#">Оплата</a></li>
+											<li><a href="#">Гарантии</a></li>
+											<li><a href="#">Возврат товаров</a></li>
+											<li><a href="#">Акции</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer-bottom">
+							<div class="row align-items-center">
+								<div class="col-6">
+									<div class="copyright">© Магия камина, 2023</div>
+								</div>
+								<div class="col-6"><a href="#" class="link-politics" target="_blank">Политика
+										конфиденциальности</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title h3">
+							<span class="font-italic">Оставьте заявку</span>
+							на консультацию
+						</div>
+
+						<div class="subtitle">Заполните свои данные и наш
+							менеджер перезвонит вам</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="img/close.svg"
+								alt=""></button>
+					</div>
+					<div class="modal-body">
+						<form method="post" class="form">
+							<label>
+								<input type="text" placeholder="Ваше имя" name="name">
+							</label>
+							<label>
+								<input type="text" placeholder="Ваш телефон" name="phone" required>
+							</label>
+							<button type="submit" class="btn btn-sm btn-accent">отправить заявку</button>
+							<div class="consent">Нажимая на кнопку, Вы даете согласие на обработку
+								своих персональных данных и соглашаетесь с
+								Пользовательским соглашением</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalThanks" tabindex="-1" aria-labelledby="modalThanksLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title h3">
+							<span class="font-italic">Спасибо!</span>
+						</div>
+
+						<div class="subtitle">
+							<p>Ваша заявка принята.</p>
+							<p>Ожидайте звонка специалиста</p>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="img/close.svg"
+								alt=""></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
