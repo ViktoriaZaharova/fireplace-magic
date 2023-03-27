@@ -347,6 +347,10 @@ ul, ol {
   margin-bottom: 35px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -357,6 +361,14 @@ ul, ol {
 
 .mb-120 {
   margin-bottom: 120px;
+}
+
+.mb-65 {
+  margin-bottom: 65px;
+}
+
+.mb-130 {
+  margin-bottom: 130px;
 }
 
 .container {
@@ -377,6 +389,10 @@ ul, ol {
 
 a.color-accent:hover {
   color: #464646;
+}
+
+.bg-light-grey {
+  background: #fafafa;
 }
 
 .font-italic {
@@ -694,10 +710,6 @@ h2 span {
   font-size: 12px;
   font-weight: 300;
   line-height: 1.25;
-}
-
-.bg-light-grey {
-  background: #fafafa;
 }
 
 .slick-slider {
