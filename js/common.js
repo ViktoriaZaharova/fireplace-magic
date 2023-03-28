@@ -152,6 +152,12 @@ $('.recommended-articles-slider').slick({
 		}
 	]
 });
+
+$('.latest-articles').slick({
+	slidesToShow: 1,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>',
+});
 // sliders end
 
 $(document).ready(function () {
