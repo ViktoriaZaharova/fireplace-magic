@@ -576,6 +576,12 @@
   .page-blog {
     margin: 0 0 70px;
   }
+  .sidebar-blog-box-latest, .subscribe-blog {
+    display: none;
+  }
+  .recommended-articles {
+    margin: 0 0 90px;
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -917,6 +923,19 @@
   }
   .mission h2 {
     margin: 0 0 30px;
+  }
+  .recommended-articles {
+    margin: 0 0 60px;
+  }
+  .page-article {
+    margin: 0 0 60px;
+  }
+  .attention-info {
+    padding: 20px;
+    font-size: 18px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -1420,6 +1439,33 @@
     width: 100%;
     padding: 20px;
   }
+  .article-box {
+    margin: 40px 0 0;
+  }
+  .article-box .h4 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  .page-article .box-text > p {
+    margin: 0 0 20px;
+  }
+  .article-quote {
+    padding: 20px;
+    font-size: 18px;
+  }
+  .article-image {
+    margin: 0 0 30px;
+  }
+  .offers-offers-item {
+    padding: 25px;
+    height: auto;
+  }
+  .keep-menu > li {
+    margin: 0 0 19px;
+  }
+  .recommended-articles .h3 {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -1494,6 +1540,9 @@
   }
   .modal-body-product__gallery-item {
     height: 250px;
+  }
+  .keep-menu.hidden {
+    max-height: 120px;
   }
 }
 @media only screen and (max-width: 420px) {

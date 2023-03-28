@@ -180,7 +180,7 @@ button, .btn
 	&:hover
 		background: $accent
 		color: #fff
-		bordr-color: $accent		
+		bordr-color: $accent
 
 .btn-group
 	flex-wrap: wrap
@@ -222,35 +222,35 @@ ul, ol
 			border-radius: 50%
 			background: $accent
 			left: 0
-			top: 8px	
+			top: 8px
 			position: absolute
 
 .m-10
-	margin: 10px 0			
+	margin: 10px 0
 
 .mb-37
 	margin-bottom: 37px
 
 .mb-35
-	margin-bottom: 35px	
+	margin-bottom: 35px
 
 .mb-30
-	margin-bottom: 30px	
+	margin-bottom: 30px
 
 .mb-20
 	margin-bottom: 20px
 
 .mb-40
-	margin-bottom: 40px	
+	margin-bottom: 40px
 
 .mb-120
 	margin-bottom: 120px
 
 .mb-65
-	margin-bottom: 65px	
+	margin-bottom: 65px
 
 .mb-130
-	margin-bottom: 130px	
+	margin-bottom: 130px
 
 .container
 	max-width: 1200px
@@ -269,7 +269,7 @@ a.color-accent
 		color: $grey
 
 .bg-light-grey
-	background: #fafafa			
+	background: #fafafa
 
 .font-italic
 	font-style: italic
@@ -303,7 +303,7 @@ h2
 
 .h2
 	text-align: center
-	width: 100%	
+	width: 100%
 	font-size: 36px
 	font-weight: 500
 	font-family: $default-font
@@ -450,6 +450,39 @@ h2
 			width: 6px
 			height: 6px
 
+.list-number-my
+	// counter-reset: item
+	list-style-type: decimal-leading-zero
+	padding: 0 0 0 30px
+
+.list-decimal-my
+	counter-reset: item
+	li
+		position: relative
+		min-height: 26px
+		padding: 0 0 0 40px
+		&::before
+			content: counters(item, ".")
+			counter-increment: item
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			width: 26px
+			height: 26px
+			background: #f9f2e3
+			color: #000
+			position: absolute
+			left: 0
+			top: 0
+			border-radius: 50%
+			transition: .3s ease
+		&:hover
+			&::before
+				background: $accent
+				color: #fff
+
+
 .form
 	[type="submit"]
 		width: 100%
@@ -461,7 +494,6 @@ h2
 	font-size: 12px
 	font-weight: 300
 	line-height: 1.25
-	
 
 // slick
 .slick-slider
@@ -618,7 +650,7 @@ h2
 
 .nav-pagination
 	width: 100%
-	margin: 20px 0 
+	margin: 20px 0
 
 .pagination
 	width: 100%

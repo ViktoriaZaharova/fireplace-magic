@@ -699,6 +699,48 @@ h2 span {
   height: 6px;
 }
 
+.list-number-my {
+  list-style-type: decimal-leading-zero;
+  padding: 0 0 0 30px;
+}
+
+.list-decimal-my {
+  counter-reset: item;
+}
+.list-decimal-my li {
+  position: relative;
+  min-height: 26px;
+  padding: 0 0 0 40px;
+}
+.list-decimal-my li::before {
+  content: counters(item, ".");
+  counter-increment: item;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background: #f9f2e3;
+  color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.list-decimal-my li:hover::before {
+  background: #f18231;
+  color: #fff;
+}
+
 .form [type=submit] {
   width: 100%;
 }

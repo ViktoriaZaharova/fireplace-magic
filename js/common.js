@@ -113,6 +113,45 @@ $('.similar-slider').slick({
 	]
 });
 
+$('.article-offers').slick({
+	slidesToShow: 3,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$('.recommended-articles-slider').slick({
+	slidesToShow: 3,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
 // sliders end
 
 $(document).ready(function () {
@@ -228,6 +267,26 @@ $('.btn-toggle-tags').on('click', function (e) {
 		$this.removeClass('trigger');
 		$this.html('Скрыть');
 		content.css('display', 'flex');
+	}
+});
+
+$('.links-toggle-menu').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $('.keep-menu');
+
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.html('свернуть');
+		content.removeClass('hidden');
+
+	} else {
+		$this.removeClass('trigger');
+		$this.html('развернуть');
+		content.addClass('hidden');
 	}
 });
 // show list all
