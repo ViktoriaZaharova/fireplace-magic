@@ -42,6 +42,9 @@
 		height: 180px
 		margin: 0 0 54px
 
+	.about .btn-video
+		margin: 0 0 -40px -147px	
+
 @media only screen and (max-width: 1200px)
 	.header-box
 		margin: 0 0 0 10px
@@ -97,6 +100,23 @@
 			width: 320px
 		.blog-card__body
 			width: calc(100% - 320px)
+
+	.home-services
+		h1
+			font-size: 52px
+		.home-content__text
+			max-width: 550px
+		.home-content
+			.h3
+				font-size: 20px
+
+	.quality-service 
+		.h3
+			font-size: 45px
+		.subtitle
+			font-size: 22px
+			max-width: 700px
+			margin: 30px auto 				
 
 @media only screen and (max-width: 992px)
 	.header-bottom
@@ -520,6 +540,30 @@
 	.recommended-articles
 		margin: 0 0 90px
 
+	.home-services
+		.home-content
+			&__text
+				max-width: none
+				width: 100%
+			&__advantages
+				display: flex
+				align-items: flex-start
+				flex-wrap: wrap
+				width: 100%
+				margin: 30px 0 0
+				&-box
+					margin: 0 0 30px
+					font-size: 18px
+					width: 33.33%
+		h1
+			font-size: 48px
+			span
+				display: inline
+
+	.subtleties-work
+		margin: 30px auto 0
+		max-width: none			
+
 @media only screen and (max-width: 890px)
 	.warranty
 		.callback-box
@@ -821,16 +865,51 @@
 		margin: 0 0 60px
 
 	.page-article
-		margin: 0 0 60px	
+		margin: 0 0 60px
 
 	.attention-info
 		padding: 20px
 		font-size: 18px
-		align-items: flex-start		
+		align-items: flex-start
 
 	.article-home
 		min-height: 350px
-		padding: 30px 30px 20px		
+		padding: 30px 30px 20px
+
+	.home-services
+		background: url('../img/services-home-bg.jpg') no-repeat center
+		background-size: cover
+		h1
+			font-size: 36px
+		.home-content
+			.h3
+				margin: 30px 0 15px
+				font-size: 18px
+			&__advantages
+				&-box
+					width: 50%	
+
+	.quality-service 
+		padding: 150px 0 60px
+		.h3
+			font-size: 34px
+		.subtitle
+			font-size: 18px		
+			
+	.subtleties
+		margin: 70px 0 60px
+		.subtitle
+			margin: 20px 0 30px
+		h2
+			span
+				display: inline
+
+	.subtleties-slider-item__text
+		width: calc(100% - 30px)
+		max-width: none
+		padding: 10px
+		font-size: 14px
+		line-height: normal											
 
 @media only screen and (max-width: 730px)
 	.you-clients
@@ -1291,7 +1370,43 @@
 		margin: 0 0 19px
 
 	.recommended-articles .h3
-		font-size: 24px	
+		font-size: 24px
+
+	.home-services
+		h1
+			font-size: 28px
+		.home-content
+			&__advantages
+				&-box
+					width: 100%
+					margin: 0 0 30px
+		.form
+			button
+				position: relative
+				width: 100%
+				margin: 20px auto 0	
+
+	.quality-service 
+		.h3
+			font-size: 26px
+
+	.subtleties 
+		.tab-content
+			padding: 0
+			margin: 30px 0 0
+			width: 100%
+		.nav-tabs-column
+			width: 100%
+		.nav-tabs
+			display: flex
+			align-items: stretch
+			max-width: none
+			justify-content: space-between
+		.nav-link
+			width: 49%		
+
+	.subtleties-work
+		padding: 30px		
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -1367,6 +1482,11 @@
 	.keep-menu.hidden
 		max-height: 120px
 
+	.quality-service 
+		.h3
+			span
+				display: inline	
+
 @media only screen and (max-width: 420px)
 	.you-clients-image
 		max-width: 320px
@@ -1423,7 +1543,12 @@
 		min-height: auto
 
 	.keep-menu-v2.hidden
-		max-height: 110px		
+		max-height: 110px
+
+	.home-services
+		h1
+			font-size: 22px
+
 
 @media only screen and (max-width: 370px)
 	.logo

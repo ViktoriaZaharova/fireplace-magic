@@ -42,6 +42,9 @@
     height: 180px;
     margin: 0 0 54px;
   }
+  .about .btn-video {
+    margin: 0 0 -40px -147px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .header-box {
@@ -99,6 +102,23 @@
   }
   .blog-card-row .blog-card__body {
     width: calc(100% - 320px);
+  }
+  .home-services h1 {
+    font-size: 52px;
+  }
+  .home-services .home-content__text {
+    max-width: 550px;
+  }
+  .home-services .home-content .h3 {
+    font-size: 20px;
+  }
+  .quality-service .h3 {
+    font-size: 45px;
+  }
+  .quality-service .subtitle {
+    font-size: 22px;
+    max-width: 700px;
+    margin: 30px auto;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -582,6 +602,37 @@
   .recommended-articles {
     margin: 0 0 90px;
   }
+  .home-services .home-content__text {
+    max-width: none;
+    width: 100%;
+  }
+  .home-services .home-content__advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin: 30px 0 0;
+  }
+  .home-services .home-content__advantages-box {
+    margin: 0 0 30px;
+    font-size: 18px;
+    width: 33.33%;
+  }
+  .home-services h1 {
+    font-size: 48px;
+  }
+  .home-services h1 span {
+    display: inline;
+  }
+  .subtleties-work {
+    margin: 30px auto 0;
+    max-width: none;
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -940,6 +991,45 @@
   .article-home {
     min-height: 350px;
     padding: 30px 30px 20px;
+  }
+  .home-services {
+    background: url("../img/services-home-bg.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .home-services h1 {
+    font-size: 36px;
+  }
+  .home-services .home-content .h3 {
+    margin: 30px 0 15px;
+    font-size: 18px;
+  }
+  .home-services .home-content__advantages-box {
+    width: 50%;
+  }
+  .quality-service {
+    padding: 150px 0 60px;
+  }
+  .quality-service .h3 {
+    font-size: 34px;
+  }
+  .quality-service .subtitle {
+    font-size: 18px;
+  }
+  .subtleties {
+    margin: 70px 0 60px;
+  }
+  .subtleties .subtitle {
+    margin: 20px 0 30px;
+  }
+  .subtleties h2 span {
+    display: inline;
+  }
+  .subtleties-slider-item__text {
+    width: calc(100% - 30px);
+    max-width: none;
+    padding: 10px;
+    font-size: 14px;
+    line-height: normal;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -1470,6 +1560,47 @@
   .recommended-articles .h3 {
     font-size: 24px;
   }
+  .home-services h1 {
+    font-size: 28px;
+  }
+  .home-services .home-content__advantages-box {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .home-services .form button {
+    position: relative;
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  .quality-service .h3 {
+    font-size: 26px;
+  }
+  .subtleties .tab-content {
+    padding: 0;
+    margin: 30px 0 0;
+    width: 100%;
+  }
+  .subtleties .nav-tabs-column {
+    width: 100%;
+  }
+  .subtleties .nav-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    max-width: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .subtleties .nav-link {
+    width: 49%;
+  }
+  .subtleties-work {
+    padding: 30px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -1548,6 +1679,9 @@
   .keep-menu.hidden {
     max-height: 120px;
   }
+  .quality-service .h3 span {
+    display: inline;
+  }
 }
 @media only screen and (max-width: 420px) {
   .you-clients-image {
@@ -1606,6 +1740,9 @@
   }
   .keep-menu-v2.hidden {
     max-height: 110px;
+  }
+  .home-services h1 {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 370px) {

@@ -153,11 +153,44 @@ $('.recommended-articles-slider').slick({
 	]
 });
 
+$('.subtleties-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>',
+});
+
 $('.latest-articles').slick({
 	slidesToShow: 1,
 	prevArrow: '<button type="button" class="slick-prev"></button>',
 	nextArrow: '<button type="button" class="slick-next"></button>',
 });
+
+$('.stages-installation-slider').slick({
+	slidesToShow: 1,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>',
+	appendArrows: '.stages-installation-slider__nav'
+});
+
+//auto counter total//
+// var homeSlider = $('.stages-installation-slider');
+
+// $('.counter-slide__default').text("/ " + homeSlider.slick("getSlick").slideCount);
+
+// homeSlider.on('afterChange', function (event, slick, currentSlide) {
+// 	$(".counter-slide__cp").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+// });
+var pagingInfo = $('.stages-installation-slider__nav .counter-slide');
+var teamSlider = $('.stages-installation-slider');
+
+teamSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+	var i = (currentSlide ? currentSlide : 0) + 1;
+	var prefix = i < 10 ? '0' : '';
+	var prefixAll = slick.slideCount < 10 ? '0' : '';
+	pagingInfo.html('<span class="current">' + prefix + i + '</span>' + ' ' + '<span class="total">' + ' ' + prefixAll + slick.slideCount + '</span>');
+});
+
 // sliders end
 
 $(document).ready(function () {
@@ -268,7 +301,7 @@ $('.btn-toggle-tags').on('click', function (e) {
 		$this.addClass('trigger');
 		$this.html('показать все');
 		content.slice(10).css('display', 'none');
-		
+
 	} else {
 		$this.removeClass('trigger');
 		$this.html('Скрыть');
@@ -330,3 +363,6 @@ $(".js-tab-trigger").click(function () {
 
 
 
+$('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+	$('.tab-content .slick-slider').slick('setPosition');
+});
