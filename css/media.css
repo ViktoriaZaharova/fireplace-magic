@@ -120,6 +120,49 @@
     max-width: 700px;
     margin: 30px auto;
   }
+  .stages-text {
+    max-width: 380px;
+  }
+  .calculate-callback {
+    max-width: 530px;
+    padding: 40px;
+  }
+  .calculate-manager {
+    width: calc(100% - 530px);
+  }
+  .calculate-manager:before {
+    width: 220px;
+    height: 300px;
+  }
+  .calculate-manager .manager-wrapper__characteristics {
+    margin: 0;
+  }
+  .calculate-manager .manager-wrapper__photo {
+    max-width: 300px;
+    bottom: -140px;
+  }
+  .calculate-manager .manager-wrapper__name {
+    top: 300px;
+  }
+  .offer-company .warranty-box {
+    max-width: 400px;
+  }
+  .offer-company .warranty-box ul br {
+    display: none;
+  }
+  .offer-company .warranty-box .h3 span {
+    display: inline;
+  }
+  .offer-company .manager-wrapper__photo {
+    max-width: 300px;
+    left: 54%;
+  }
+  .offer-company .callback-box {
+    max-width: 370px;
+  }
+  .manager-wrapper__description {
+    max-width: 220px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .header-bottom {
@@ -633,6 +676,139 @@
     margin: 30px auto 0;
     max-width: none;
   }
+  .stages-installation-slider__nav {
+    padding: 0;
+    margin: 30px auto 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .counter-slide {
+    margin: 0 40px 0 0;
+  }
+  .stages-installation {
+    padding: 100px 0;
+  }
+  .stages-installation-slider-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 30px auto 0;
+  }
+  .stages-installation-slider-item .h3 {
+    max-width: none;
+    margin: 15px 0 25px;
+  }
+  .stages-work-wrap .h4 {
+    max-width: none;
+  }
+  .stages-text {
+    max-width: none;
+    width: calc(100% - 70px);
+    padding: 0 0 0 20px;
+  }
+  .stages-installation-slider-item__content {
+    margin: 0;
+  }
+  .stages-installation-slider-item__content .number {
+    margin: 0;
+  }
+  .calculate-callback {
+    max-width: none;
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .calculate-callback .download-portfolio__content {
+    margin: 0 auto;
+  }
+  .calculate-callback .form-download label {
+    max-width: none;
+    width: calc(100% - 174px - 10px);
+  }
+  .calculate-callback .form-download .consent {
+    margin: 10px 0 0;
+    max-width: none;
+  }
+  .calculate-manager {
+    width: 100%;
+    margin: 30px auto 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calculate-manager:before {
+    display: none;
+  }
+  .calculate-manager .manager-wrapper__photo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .category-v2 {
+    padding-bottom: 0;
+  }
+  .nav-tabs-design-my {
+    margin: 0 0 35px;
+  }
+  .design-wrapper .btn {
+    margin: 0 0 30px;
+  }
+  .design-wrapper .h4 {
+    max-width: none;
+  }
+  .example-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .example-box {
+    width: calc(50% - 10px);
+  }
+  .design-description {
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+  .design-description p {
+    margin: 0 0 20px;
+  }
+  .design-description p:last-child {
+    margin: 0;
+  }
+  .offer-company {
+    padding: 70px 0 90px;
+  }
+  .offer-company .warranty-box {
+    max-width: none;
+  }
+  .offer-company .warranty-box__body {
+    max-width: none;
+  }
+  .offer-company .warranty-box__body p {
+    margin: 5px 0 10px;
+    font-size: 18px;
+  }
+  .offer-company .callback-box {
+    margin: 30px auto;
+    max-width: none;
+  }
+  .offer-company .manager-wrapper__photo {
+    position: relative;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    bottom: 0;
+    margin: 30px auto -90px 100px;
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -782,13 +958,11 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     max-width: none;
   }
   .category .nav-tabs .nav-link {
     max-width: calc(33.33% - 10px);
+    margin: 0 auto 10px;
   }
   .download-portfolio .subtitle {
     margin: 20px auto;
@@ -1031,6 +1205,28 @@
     font-size: 14px;
     line-height: normal;
   }
+  .category-v2 {
+    padding-bottom: 0;
+  }
+  .design-my .nav-tabs-design-my {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .design-my .nav-tabs-design-my .nav-link {
+    margin: 0 20px 0 0;
+  }
+  .tab-content-design-my {
+    width: 100%;
+    padding: 0;
+  }
+  .design-wrapper {
+    padding: 30px;
+    margin: 30px 0 0;
+  }
+  .design-wrapper .h3 {
+    margin: 0 0 25px;
+  }
 }
 @media only screen and (max-width: 730px) {
   .you-clients {
@@ -1100,6 +1296,28 @@
   }
   .sales .form-download label {
     margin: 0 16px 0 0;
+  }
+  .offer-company .manager-wrapper__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .manager-wrapper__description {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  .manager-wrapper__description:before {
+    display: none;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1601,6 +1819,38 @@
   .subtleties-work {
     padding: 30px;
   }
+  .stages-installation-slider-item__content {
+    padding: 30px;
+  }
+  .stages-text .box-text {
+    font-size: 16px;
+  }
+  .counter-slide {
+    font-size: 18px;
+  }
+  .calculate-callback .form-download label {
+    width: 100%;
+  }
+  .calculate-manager {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .material-box__img {
+    width: 100px;
+    height: 100px;
+  }
+  .example-box {
+    width: 100%;
+  }
+  .offer-company .manager-wrapper__photo {
+    max-width: 260px;
+    margin: 30px auto -90px 20px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -1744,6 +1994,17 @@
   .home-services h1 {
     font-size: 22px;
   }
+  .stages-text {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+  .stages-installation-slider-item .h3 {
+    margin: 0 0 20px;
+  }
+  .calculate-manager .manager-wrapper__photo {
+    max-width: 260px;
+  }
 }
 @media only screen and (max-width: 370px) {
   .logo {
@@ -1763,7 +2024,7 @@
   }
   .category .nav-tabs .nav-link {
     height: 100%;
-    margin: 0 0 10px;
+    margin: 0 auto 10px;
     padding: 10px;
     width: calc(50% - 5px);
     max-width: none;
