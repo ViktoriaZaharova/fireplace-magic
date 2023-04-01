@@ -1,5 +1,18 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1840px) {
+  .pdf-portfolio__img {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .pdf-portfolio {
+    padding: 180px 0;
+  }
+  .pdf-portfolio__img {
+    max-width: 800px;
+  }
+}
 @media only screen and (max-width: 1265px) {
   .you-clients-wrapper {
     max-width: 780px;
@@ -162,6 +175,51 @@
   }
   .manager-wrapper__description {
     max-width: 220px;
+  }
+  .sales-director__photo {
+    min-width: auto;
+    max-width: 500px;
+    margin: 30px auto -56px;
+  }
+  .sales-director__photo .manager-wrapper__name {
+    bottom: 200px;
+    right: 100px;
+  }
+  .sales-director__content {
+    margin: 0;
+  }
+  .sales-director {
+    padding: 50px 0 0;
+  }
+  .sales-director .callback-box {
+    padding: 45px 40px;
+    min-width: auto;
+    max-width: none;
+    width: 100%;
+    float: none;
+  }
+  .sales-director .callback-box__body {
+    max-width: none;
+  }
+  .sales-director__footer {
+    margin: 30px 0 0;
+  }
+  .sales-director__footer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sales-director__text {
+    max-width: none;
+  }
+  .sales-director__text .subtitle {
+    margin: 30px auto;
+  }
+  .pdf-portfolio {
+    padding: 120px 0;
+  }
+  .pdf-portfolio__img {
+    max-width: 600px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -809,6 +867,53 @@
     bottom: 0;
     margin: 30px auto -90px 100px;
   }
+  .showroom .article-image {
+    height: auto;
+  }
+  .location-work {
+    padding: 70px 0;
+    background-size: contain;
+  }
+  .location-work .subtitle {
+    margin: 20px auto 30px;
+  }
+  .list-cities {
+    font-size: 16px;
+  }
+  .prices-work {
+    margin: 50px 0 80px;
+  }
+  .prices-work h2 {
+    margin: 0 auto 30px;
+  }
+  .prices-work .design-wrapper .btn {
+    margin: 0 auto;
+  }
+  .prices-work-box {
+    margin: 0 0 20px;
+    font-size: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .pdf-portfolio {
+    padding: 70px 0;
+  }
+  .pdf-portfolio__img {
+    max-width: 400px;
+  }
+  .pdf-portfolio .callback-box {
+    min-width: auto;
+    width: 100%;
+    padding: 40px 30px;
+  }
+  .pdf-portfolio .callback-box__body {
+    max-width: none;
+  }
+  .pdf-portfolio .callback-box .consent {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 890px) {
   .warranty .callback-box {
@@ -1226,6 +1331,49 @@
   }
   .design-wrapper .h3 {
     margin: 0 0 25px;
+  }
+  .list-cities {
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4;
+  }
+  .list-cities li {
+    margin: 0 0 15px;
+  }
+  .prices-work .nav-tabs-column {
+    width: 100%;
+  }
+  .prices-work .nav-tabs {
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .prices-work .nav-tabs .nav-link {
+    width: calc(50% - 10px);
+    margin: 0 auto 10px;
+  }
+  .pdf-portfolio {
+    text-align: center;
+  }
+  .pdf-portfolio__img {
+    display: none;
+  }
+  .pdf-portfolio .callback-box {
+    margin: 0 auto;
+  }
+  .pdf-portfolio .subtitle {
+    margin: 10px auto 20px;
+  }
+  .prices-work-box__icon {
+    width: 50px;
+    min-width: 50px;
+    margin: 0 10px 0 0;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -1851,6 +1999,62 @@
     max-width: 260px;
     margin: 30px auto -90px 20px;
   }
+  .showroom {
+    padding: 60px 0;
+  }
+  .showroom h2 {
+    margin: 0 0 30px;
+  }
+  .showroom .article-quote {
+    padding: 20px;
+  }
+  .sales-director__photo .manager-wrapper__name {
+    right: 50px;
+    bottom: 150px;
+  }
+  .sales-director__footer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sales-director__footer ul li {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 15px;
+    font-size: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sales-director__footer ul li:last-child {
+    margin: 0;
+  }
+  .sales-director__footer ul li::before {
+    margin-top: 0;
+  }
+  .list-cities {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+    font-size: 15px;
+  }
+  .prices-work-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 15px 20px;
+  }
+  .prices-work-item__name {
+    width: 100%;
+    max-width: none;
+  }
+  .prices-work-item__sum {
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -2004,6 +2208,11 @@
   }
   .calculate-manager .manager-wrapper__photo {
     max-width: 260px;
+  }
+  .list-cities {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
   }
 }
 @media only screen and (max-width: 370px) {

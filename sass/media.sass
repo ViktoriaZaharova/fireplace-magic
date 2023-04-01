@@ -1,6 +1,16 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1840px)
+	.pdf-portfolio__img
+		max-width: 960px
+
+@media only screen and (max-width: 1400px)
+	.pdf-portfolio
+		padding: 180px 0
+		&__img
+			max-width: 800px
+
 @media only screen and (max-width: 1265px)
 	.you-clients-wrapper
 		max-width: 780px
@@ -156,7 +166,42 @@
 			max-width: 370px	
 
 	.manager-wrapper__description
-		max-width: 220px	
+		max-width: 220px
+
+	.sales-director__photo
+		min-width: auto
+		max-width: 500px
+		margin: 30px auto -56px
+		.manager-wrapper__name
+			bottom: 200px
+			right: 100px
+
+	.sales-director__content
+		margin: 0 
+
+	.sales-director 
+		padding: 50px 0 0
+		.callback-box
+			padding: 45px 40px
+			min-width: auto
+			max-width: none
+			width: 100%
+			float: none
+			&__body
+				max-width: none	
+		&__footer
+			margin: 30px 0 0
+			ul
+				justify-content: center	
+		&__text
+			max-width: none	
+			.subtitle
+				margin: 30px auto
+
+	.pdf-portfolio
+		padding: 120px 0
+		&__img
+			max-width: 600px
 
 @media only screen and (max-width: 992px)
 	.header-bottom
@@ -709,6 +754,45 @@
 			bottom: 0
 			margin: 30px auto -90px 100px
 
+	.showroom 
+		.article-image
+			height: auto
+
+	.location-work
+		padding: 70px 0
+		background-size: contain
+		.subtitle
+			margin: 20px auto 30px
+
+	.list-cities
+		font-size: 16px		
+
+	.prices-work
+		margin: 50px 0 80px
+		h2
+			margin: 0 auto 30px	
+		.design-wrapper .btn
+			margin: 0 auto	
+
+	.prices-work-box
+		margin: 0 0 20px
+		font-size: 16px		
+		justify-content: center
+		width: 100%
+
+	.pdf-portfolio
+		padding: 70px 0
+		&__img
+			max-width: 400px	
+		.callback-box
+			min-width: auto
+			width: 100%
+			padding: 40px 30px	
+			&__body
+				max-width: none
+			.consent
+				text-align: center	
+
 @media only screen and (max-width: 890px)
 	.warranty
 		.callback-box
@@ -1074,6 +1158,37 @@
 		margin: 30px 0 0
 		.h3
 			margin: 0 0 25px
+
+	.list-cities
+		column-count: 4
+		li
+			margin: 0 0 15px
+
+	.prices-work 
+		.nav-tabs-column
+			width: 100%
+		.nav-tabs
+			max-width: none
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			.nav-link
+				width: calc(50% - 10px)	
+				margin: 0 auto 10px
+
+	.pdf-portfolio
+		text-align: center
+		&__img
+			display: none
+		.callback-box
+			margin: 0 auto	
+		.subtitle
+			margin: 10px auto 20px
+			
+	.prices-work-box__icon
+		width: 50px
+		min-width: 50px
+		margin: 0 10px 0 0						
 
 @media only screen and (max-width: 730px)
 	.you-clients
@@ -1618,6 +1733,47 @@
 		max-width: 260px
 		margin: 30px auto -90px 20px	
 
+	.showroom
+		padding: 60px 0
+		h2
+			margin: 0 0 30px
+		.article-quote
+			padding: 20px	
+
+	.sales-director 
+		&__photo
+			.manager-wrapper__name
+				right: 50px
+				bottom: 150px
+		&__footer
+			ul
+				flex-wrap: wrap
+				li
+					width: 100%
+					max-width: none
+					margin: 0 0 15px
+					font-size: 16px
+					align-items: center
+					&:last-child
+						margin: 0
+					&::before
+						margin-top: 0					
+
+	.list-cities
+		column-count: 3
+		font-size: 15px
+
+	.prices-work-item
+		flex-direction: column
+		align-items: flex-start
+		padding: 15px 20px
+		&__name
+			width: 100%
+			max-width: none
+		&__sum
+			font-size: 18px
+			margin: 10px 0 0		
+
 @media only screen and (max-width: 480px)
 	.logo
 		max-width: 100px
@@ -1769,6 +1925,9 @@
 
 	.calculate-manager .manager-wrapper__photo
 		max-width: 260px
+
+	.list-cities
+		column-count: 2	
 
 @media only screen and (max-width: 370px)
 	.logo
