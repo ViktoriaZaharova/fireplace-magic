@@ -218,6 +218,10 @@ a.header-box:hover {
 .header .menu .dropdown-item:last-child {
   margin: 0;
 }
+.header .menu .dropdown-menu-list > li > a {
+  font-weight: 500;
+  padding: 11px 10px;
+}
 .header .menu .dropdown-menu {
   margin: 0 !important;
 }
